@@ -1,2 +1,1 @@
-# build2018demo
-Build 2018 demo samples
+Build 2018 contoso cafe bot.

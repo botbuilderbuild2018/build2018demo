@@ -1,0 +1,127 @@
+[
+  {
+    "conversation": {
+      "id": "1"
+    },
+    "id": "d60abe7f-c148-4f4a-8f08-ab400c8ef78c",
+    "recipient": {
+      "id": "02d4bbc0-9bfc-38e5-b08c-f88595f29736",
+      "name": "cafebot",
+      "role": "bot"
+    },
+    "from": {
+      "id": "fac6b340-ab6f-31fc-bd63-6ebee16a8274",
+      "name": "vishwac",
+      "role": "user"
+    },
+    "text": "where can i get coffee?",
+    "timestamp": "2018-04-29T01:57:35.000Z",
+    "type": "message",
+    "channelId": "chatdown"
+  },
+  {
+    "conversation": {
+      "id": "1"
+    },
+    "id": "b72bbfdf-352f-427d-8db5-cb3b4a497efb",
+    "recipient": {
+      "id": "fac6b340-ab6f-31fc-bd63-6ebee16a8274",
+      "name": "vishwac",
+      "role": "user"
+    },
+    "from": {
+      "id": "02d4bbc0-9bfc-38e5-b08c-f88595f29736",
+      "name": "cafebot",
+      "role": "bot"
+    },
+    "text": "did you have a city in mind?",
+    "timestamp": "2018-04-29T01:57:37.000Z",
+    "type": "message",
+    "channelId": "chatdown"
+  },
+  {
+    "conversation": {
+      "id": "1"
+    },
+    "id": "4e5cee4a-469f-4177-b3cc-a7443abeccd8",
+    "recipient": {
+      "id": "02d4bbc0-9bfc-38e5-b08c-f88595f29736",
+      "name": "cafebot",
+      "role": "bot"
+    },
+    "from": {
+      "id": "fac6b340-ab6f-31fc-bd63-6ebee16a8274",
+      "name": "vishwac",
+      "role": "user"
+    },
+    "text": "seattle",
+    "timestamp": "2018-04-29T01:57:39.000Z",
+    "type": "message",
+    "channelId": "chatdown"
+  },
+  {
+    "attachments": [
+      {
+        "contentType": "application/vnd.microsoft.card.adaptive",
+        "content": {
+          "$schema": "https://microsoft.github.io/AdaptiveCards/schemas/adaptive-card.json",
+          "type": "AdaptiveCard",
+          "version": "1.0",
+          "body": [
+            {
+              "type": "TextBlock",
+              "text": "Seattle Contoso Cafe",
+              "size": "large",
+              "weight": "bolder"
+            },
+            {
+              "type": "Column",
+              "size": "1",
+              "items": [
+                {
+                  "type": "Image",
+                  "url": "https://cdn.pixabay.com/photo/2015/06/05/10/35/coffee-798315_640.png",
+                  "size": "auto"
+                }
+              ]
+            },
+            {
+              "type": "TextBlock",
+              "text": "1 pike place, Seattle, WA",
+              "wrap": true
+            },
+            {
+              "type": "TextBlock",
+              "text": "Hours: M-F 9AM-11PM"
+            }
+          ],
+          "actions": [
+            {
+              "type": "Action.OpenUrl",
+              "url": "http://foo.com",
+              "title": "View Store"
+            }
+          ]
+        }
+      }
+    ],
+    "conversation": {
+      "id": "1"
+    },
+    "id": "9547605e-9e07-4e04-9bf2-ea0a74ce7a82",
+    "recipient": {
+      "id": "fac6b340-ab6f-31fc-bd63-6ebee16a8274",
+      "name": "vishwac",
+      "role": "user"
+    },
+    "from": {
+      "id": "02d4bbc0-9bfc-38e5-b08c-f88595f29736",
+      "name": "cafebot",
+      "role": "bot"
+    },
+    "text": "Our seattle store is open now.\n",
+    "timestamp": "2018-04-29T01:57:43.000Z",
+    "type": "message",
+    "channelId": "chatdown"
+  }
+]

@@ -1,0 +1,31 @@
+{
+    "name": "ContosoCafeBot",
+    "description": "",
+    "secretKey": "",
+    "services": [
+        {
+            "appId": "",
+            "id": "http://localhost:3978/api/messages",
+            "type": "endpoint",
+            "appPassword": "",
+            "endpoint": "http://localhost:3978/api/messages",
+            "name": "ContosoCafeBot"
+        },
+        {
+            "type": "abs",
+            "name": "contosocafebuild2018demo",
+            "id": "contosocafebuild2018demo",
+            "tenantId": "44bd8c0c-5de3-47e3-a011-d125c70aab59",
+            "subscriptionId": "087822e7-ec21-4d3b-8ad4-92da1098178c",
+            "resourceGroup": "2018BuildDemo"
+        },
+        {
+            "appId": "d46d9287-3672-4ffe-8b9e-477d53c2ce7a",
+            "id": "https://contosocafebuild2018demo.azurewebsites.net/api/messages",
+            "type": "endpoint",
+            "appPassword": "(F%LsNDyVvEz>Jq3",
+            "endpoint": "https://contosocafebuild2018demo.azurewebsites.net/api/messages",
+            "name": "contosocafebuild2018demo (2)"
+        }
+    ]
+}
