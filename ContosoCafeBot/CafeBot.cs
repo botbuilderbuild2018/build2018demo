@@ -42,23 +42,14 @@ namespace ContosoCafeBot
                     }
                     break;
                 case ActivityTypes.Message:
-                    //// Get the conversation state from the turn context
-                    //var state = context.GetConversationState<EchoState>();
-
-                    //// Bump the turn count. 
-                    //state.TurnCount++;
-
-                    //// Echo back to the user whatever they typed.
                     //await context.SendActivity($"Turn {state.TurnCount}: You sent '{context.Activity.Text}'");
-
-                   
-
 
                     // top level dispatch
                     switch(context.Activity.Text)
                     {
                         case "hi":
                             await context.SendActivity("Hello, I'm the contoso cafe bot. How can I help you?");
+                            //await context.SendActivity($"Turn {state.TurnCount}: You sent '{context.Activity.Text}'");
                             break;
                         case "book table":
                             break;

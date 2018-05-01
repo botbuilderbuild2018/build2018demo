@@ -20,7 +20,6 @@ namespace ContosoCafeBot
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
-                .AddJsonFile("ContosoCafeBot.bot", optional:false)
                 .AddEnvironmentVariables();
 
             Configuration = builder.Build();

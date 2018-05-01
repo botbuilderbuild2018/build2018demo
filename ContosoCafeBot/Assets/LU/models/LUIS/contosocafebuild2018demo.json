@@ -18,7 +18,8 @@
   ],
   "entities": [
     {
-      "name": "partySize"
+      "name": "partySize",
+      "roles": []
     }
   ],
   "composites": [],
@@ -78,10 +79,7 @@
       "roles": []
     }
   ],
-  "bing_entities": [
-    "datetimeV2",
-    "number"
-  ],
+  "regex_entities": [],
   "model_features": [],
   "regex_features": [],
   "utterances": [
@@ -216,8 +214,17 @@
   ],
   "patterns": [],
   "patternAnyEntities": [],
-  "prebuiltEntities": [],
-  "luis_schema_version": "2.2.0",
+  "prebuiltEntities": [
+    {
+      "name": "datetimeV2",
+      "roles": []
+    },
+    {
+      "name": "number",
+      "roles": []
+    }
+  ],
+  "luis_schema_version": "3.0.0",
   "versionId": "0.1",
   "name": "contosocafebuild2018demo",
   "desc": "",
