@@ -21,7 +21,6 @@ namespace SmartRetailBot
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
-                .AddJsonFile("cafebot.bot")
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
             var p = Configuration["services:1:appId"];
@@ -35,7 +34,13 @@ namespace SmartRetailBot
             services.AddBot<LitwareRoot>(options =>
             {
                 options.CredentialProvider = new ConfigurationCredentialProvider(Configuration);
-                
+                var luisOptions = new LuisRequest { Verbose = true };
+                options.Middleware.Add(new LuisRecognizerMiddleware(
+                    new LuisModel(
+                        "653f443e-da2d-43ee-ae47-8da7a836fc25", 
+                        "be30825b782843dcbbe520ac5338f567", 
+                        new Uri("https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/")), luisOptions: luisOptions));
+
 
                 /*options.Middleware.Add(new QnAMakerMiddleware(
                                 new QnAMakerMiddlewareOptions()
