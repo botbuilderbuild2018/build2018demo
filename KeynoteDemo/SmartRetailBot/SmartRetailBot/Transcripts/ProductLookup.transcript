@@ -3,19 +3,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "8218e83d-33ba-471f-9097-1fba6f2a782f",
+    "id": "965ec386-ba95-4ec0-9b0e-a31af3beeb4c",
     "recipient": {
-      "id": "56955607-ae75-3916-a67b-fa76b546bf10",
+      "id": "5170b5c5-c881-3a8f-bec1-f93577fa1260",
       "name": "cafebot",
       "role": "bot"
     },
     "from": {
-      "id": "94698f89-f2dc-3ce8-a36e-246ac42aaf49",
+      "id": "3c5a4f31-77b5-3b4d-b50a-7d72402695c5",
       "name": "vishwac",
       "role": "user"
     },
     "text": "I want a new watch",
-    "timestamp": "2018-05-02T02:15:08.000Z",
+    "timestamp": "2018-05-02T02:59:39.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -23,19 +23,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "dbe68343-e363-44a3-9d74-04b1e16d8148",
+    "id": "b61be9f9-9540-4722-b45c-a4347d14dcb3",
     "recipient": {
-      "id": "94698f89-f2dc-3ce8-a36e-246ac42aaf49",
+      "id": "3c5a4f31-77b5-3b4d-b50a-7d72402695c5",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "56955607-ae75-3916-a67b-fa76b546bf10",
+      "id": "5170b5c5-c881-3a8f-bec1-f93577fa1260",
       "name": "cafebot",
       "role": "bot"
     },
     "text": "I can help you with that! Let me see what I can find.",
-    "timestamp": "2018-05-02T02:15:10.000Z",
+    "timestamp": "2018-05-02T02:59:41.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -43,19 +43,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "f9f3c4ad-23cc-4254-87fa-df71232873be",
+    "id": "69d656a9-7900-454d-8f24-5ca26f5a2a3c",
     "recipient": {
-      "id": "94698f89-f2dc-3ce8-a36e-246ac42aaf49",
+      "id": "3c5a4f31-77b5-3b4d-b50a-7d72402695c5",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "56955607-ae75-3916-a67b-fa76b546bf10",
+      "id": "5170b5c5-c881-3a8f-bec1-f93577fa1260",
       "name": "cafebot",
       "role": "bot"
     },
     "text": "Here's what I found.",
-    "timestamp": "2018-05-02T02:15:12.000Z",
+    "timestamp": "2018-05-02T02:59:43.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -81,19 +81,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "82e83f69-488f-42a7-a29d-7e46344173ea",
+    "id": "c279c65d-2b43-4c08-a087-71e236d499f1",
     "recipient": {
-      "id": "94698f89-f2dc-3ce8-a36e-246ac42aaf49",
+      "id": "3c5a4f31-77b5-3b4d-b50a-7d72402695c5",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "56955607-ae75-3916-a67b-fa76b546bf10",
+      "id": "5170b5c5-c881-3a8f-bec1-f93577fa1260",
       "name": "cafebot",
       "role": "bot"
     },
     "text": "",
-    "timestamp": "2018-05-02T02:15:24.000Z",
+    "timestamp": "2018-05-02T02:59:55.000Z",
     "type": "message",
     "channelId": "chatdown",
     "attachmentLayout": "carousel"
@@ -108,19 +108,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "ebdeb21d-c4fa-4a5d-bae6-d3119a4e5630",
+    "id": "f5dd47ff-37df-47fc-92df-97b4bf042ec9",
     "recipient": {
-      "id": "94698f89-f2dc-3ce8-a36e-246ac42aaf49",
+      "id": "3c5a4f31-77b5-3b4d-b50a-7d72402695c5",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "56955607-ae75-3916-a67b-fa76b546bf10",
+      "id": "5170b5c5-c881-3a8f-bec1-f93577fa1260",
       "name": "cafebot",
       "role": "bot"
     },
     "text": null,
-    "timestamp": "2018-05-02T02:15:28.000Z",
+    "timestamp": "2018-05-02T02:59:59.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -128,19 +128,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "00b1d758-8e58-4c98-a6ee-05d3e33dd6f0",
+    "id": "51858449-9e2f-4927-b65e-9f1d8d563dcc",
     "recipient": {
-      "id": "56955607-ae75-3916-a67b-fa76b546bf10",
+      "id": "5170b5c5-c881-3a8f-bec1-f93577fa1260",
       "name": "cafebot",
       "role": "bot"
     },
     "from": {
-      "id": "94698f89-f2dc-3ce8-a36e-246ac42aaf49",
+      "id": "3c5a4f31-77b5-3b4d-b50a-7d72402695c5",
       "name": "vishwac",
       "role": "user"
     },
     "text": "I like the first one.",
-    "timestamp": "2018-05-02T02:15:30.000Z",
+    "timestamp": "2018-05-02T03:00:01.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -148,19 +148,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "6f840ba0-c793-4181-abaf-5771ce0ab8f2",
+    "id": "fd6a8194-8764-4ddb-bb76-eea221500987",
     "recipient": {
-      "id": "94698f89-f2dc-3ce8-a36e-246ac42aaf49",
+      "id": "3c5a4f31-77b5-3b4d-b50a-7d72402695c5",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "56955607-ae75-3916-a67b-fa76b546bf10",
+      "id": "5170b5c5-c881-3a8f-bec1-f93577fa1260",
       "name": "cafebot",
       "role": "bot"
     },
     "text": "Sure, pulling up more information ..",
-    "timestamp": "2018-05-02T02:15:32.000Z",
+    "timestamp": "2018-05-02T03:00:03.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -174,19 +174,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "cc899480-4c05-4b73-941f-28d3acca2d3b",
+    "id": "cf3c09ae-1d53-44b2-95d7-14b911e5380f",
     "recipient": {
-      "id": "94698f89-f2dc-3ce8-a36e-246ac42aaf49",
+      "id": "3c5a4f31-77b5-3b4d-b50a-7d72402695c5",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "56955607-ae75-3916-a67b-fa76b546bf10",
+      "id": "5170b5c5-c881-3a8f-bec1-f93577fa1260",
       "name": "cafebot",
       "role": "bot"
     },
     "text": null,
-    "timestamp": "2018-05-02T02:15:36.000Z",
+    "timestamp": "2018-05-02T03:00:07.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -194,19 +194,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "5e70ae34-2d0f-4f8d-a69b-38df736c3477",
+    "id": "d9e189c6-bf4d-4e66-a7b3-f6cd6087ae23",
     "recipient": {
-      "id": "56955607-ae75-3916-a67b-fa76b546bf10",
+      "id": "5170b5c5-c881-3a8f-bec1-f93577fa1260",
       "name": "cafebot",
       "role": "bot"
     },
     "from": {
-      "id": "94698f89-f2dc-3ce8-a36e-246ac42aaf49",
+      "id": "3c5a4f31-77b5-3b4d-b50a-7d72402695c5",
       "name": "vishwac",
       "role": "user"
     },
     "text": "That's nice! Thank you.",
-    "timestamp": "2018-05-02T02:15:38.000Z",
+    "timestamp": "2018-05-02T03:00:09.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -214,19 +214,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "e6b25390-766c-4f15-a642-ea9ecb9eb1d2",
+    "id": "f3db7791-f721-4746-a007-1fc928a13e08",
     "recipient": {
-      "id": "94698f89-f2dc-3ce8-a36e-246ac42aaf49",
+      "id": "3c5a4f31-77b5-3b4d-b50a-7d72402695c5",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "56955607-ae75-3916-a67b-fa76b546bf10",
+      "id": "5170b5c5-c881-3a8f-bec1-f93577fa1260",
       "name": "cafebot",
       "role": "bot"
     },
     "text": "Sure, you are most welcome!\n",
-    "timestamp": "2018-05-02T02:15:40.000Z",
+    "timestamp": "2018-05-02T03:00:11.000Z",
     "type": "message",
     "channelId": "chatdown"
   }
