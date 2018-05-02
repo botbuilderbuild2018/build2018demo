@@ -37,18 +37,13 @@ namespace SmartRetailBot
                 var luisOptions = new LuisRequest { Verbose = true };
                 options.Middleware.Add(new LuisRecognizerMiddleware(
                     new LuisModel(
-                        "653f443e-da2d-43ee-ae47-8da7a836fc25", 
+                        "586c6eba-c656-4a86-adc5-b963769bbae", 
                         "be30825b782843dcbbe520ac5338f567", 
                         new Uri("https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/")), luisOptions: luisOptions));
+                
 
-
-                /*options.Middleware.Add(new QnAMakerMiddleware(
-                                new QnAMakerMiddlewareOptions()
-                                {
-                                    SubscriptionKey = "d534abd71a0d438d95d5a001025ee074",
-                                    KnowledgeBaseId = "40080f40-0200-482e-8e55-fae74d973490",
-                                    EndActivityRoutingOnAnswer = true
-                                }));*/
+                /*var qnamakerEndpoint = new QnAMakerEndpoint("POST /knowledgebases/5d820e39-3b6e-405d-aede-433c0c20e835/generateAnswer Host: https://westus.api.cognitive.microsoft.com/qnamaker/v2.0 Ocp-Apim-Subscription-Key: 443816d6948b4669882f95957c5a4096 Content-Type: application/json");
+                options.Middleware.Add(new QnAMakerMiddleware(qnamakerEndpoint, new QnAMakerMiddlewareOptions()));*/
 
             });
         }
