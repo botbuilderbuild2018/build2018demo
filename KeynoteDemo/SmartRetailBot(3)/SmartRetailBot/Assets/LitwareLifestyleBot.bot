@@ -1,0 +1,24 @@
+{
+    "name": "LitwareLifestyleBot",
+    "description": "",
+    "secretKey": "",
+    "services": [
+        {
+            "appId": "",
+            "id": "http://localhost:59611/api/messages",
+            "type": "endpoint",
+            "appPassword": "",
+            "endpoint": "http://localhost:59611/api/messages",
+            "name": "LitwareLifestyleBot"
+        },
+        {
+            "id": "653f443e-da2d-43ee-ae47-8da7a836fc25",
+            "type": "luis",
+            "name": "litwareLUISApp",
+            "version": "0.1",
+            "appId": "653f443e-da2d-43ee-ae47-8da7a836fc25",
+            "authoringKey": "be30825b782843dcbbe520ac5338f567",
+            "subscriptionKey": "be30825b782843dcbbe520ac5338f567"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "subtitle":  "What do you think of these?",
+  "buttons": [
+    {
+      "type": "openUrl",
+      "title": "Not what I'm looking for",
+      "value": "locationInfo.storeImg"
+    },
+    {
+      "type": "imback",
+      "title": "These look great",
+      "value": "book a table in "
+    }
+  ]
+}
