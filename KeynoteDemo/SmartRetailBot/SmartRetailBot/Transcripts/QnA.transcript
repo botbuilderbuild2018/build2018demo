@@ -1,0 +1,122 @@
+[
+  {
+    "conversation": {
+      "id": "1"
+    },
+    "id": "07e3fdc3-75e2-4ce2-9193-b58c5c7866ba",
+    "recipient": {
+      "id": "edbc822a-b54a-3e48-87c4-50ee794fbcc9",
+      "name": "cafebot",
+      "role": "bot"
+    },
+    "from": {
+      "id": "64f43434-4865-30bc-bb43-3c64a12444a8",
+      "name": "vishwac",
+      "role": "user"
+    },
+    "text": "What's your returns policy?",
+    "timestamp": "2018-05-02T02:14:58.000Z",
+    "type": "message",
+    "channelId": "chatdown"
+  },
+  {
+    "conversation": {
+      "id": "1"
+    },
+    "id": "ef4b3320-76a5-4d93-924b-23ca22929454",
+    "recipient": {
+      "id": "64f43434-4865-30bc-bb43-3c64a12444a8",
+      "name": "vishwac",
+      "role": "user"
+    },
+    "from": {
+      "id": "edbc822a-b54a-3e48-87c4-50ee794fbcc9",
+      "name": "cafebot",
+      "role": "bot"
+    },
+    "text": "You can return unworn items within seven days for a full refund.",
+    "timestamp": "2018-05-02T02:15:00.000Z",
+    "type": "message",
+    "channelId": "chatdown"
+  },
+  {
+    "conversation": {
+      "id": "1"
+    },
+    "id": "1075a7f4-681d-4589-ac3a-fdb36642cdfe",
+    "recipient": {
+      "id": "edbc822a-b54a-3e48-87c4-50ee794fbcc9",
+      "name": "cafebot",
+      "role": "bot"
+    },
+    "from": {
+      "id": "64f43434-4865-30bc-bb43-3c64a12444a8",
+      "name": "vishwac",
+      "role": "user"
+    },
+    "text": "What about after that?",
+    "timestamp": "2018-05-02T02:15:02.000Z",
+    "type": "message",
+    "channelId": "chatdown"
+  },
+  {
+    "conversation": {
+      "id": "1"
+    },
+    "id": "9356eda1-ea40-45dd-b3b0-c9b1e8a29e02",
+    "recipient": {
+      "id": "64f43434-4865-30bc-bb43-3c64a12444a8",
+      "name": "vishwac",
+      "role": "user"
+    },
+    "from": {
+      "id": "edbc822a-b54a-3e48-87c4-50ee794fbcc9",
+      "name": "cafebot",
+      "role": "bot"
+    },
+    "text": "After seven days, you can return unworn items for store credit.",
+    "timestamp": "2018-05-02T02:15:04.000Z",
+    "type": "message",
+    "channelId": "chatdown"
+  },
+  {
+    "conversation": {
+      "id": "1"
+    },
+    "id": "d50fa6c1-2169-4bc3-8a93-f173256f19b7",
+    "recipient": {
+      "id": "edbc822a-b54a-3e48-87c4-50ee794fbcc9",
+      "name": "cafebot",
+      "role": "bot"
+    },
+    "from": {
+      "id": "64f43434-4865-30bc-bb43-3c64a12444a8",
+      "name": "vishwac",
+      "role": "user"
+    },
+    "text": "What are your locations",
+    "timestamp": "2018-05-02T02:15:06.000Z",
+    "type": "message",
+    "channelId": "chatdown"
+  },
+  {
+    "conversation": {
+      "id": "1"
+    },
+    "id": "42aaef7e-3fe3-405f-ab86-c05a72d5e843",
+    "recipient": {
+      "id": "64f43434-4865-30bc-bb43-3c64a12444a8",
+      "name": "vishwac",
+      "role": "user"
+    },
+    "from": {
+      "id": "edbc822a-b54a-3e48-87c4-50ee794fbcc9",
+      "name": "cafebot",
+      "role": "bot"
+    },
+    "text": "We have Cafe locations in Redmond, Seattle, Renton and Bellevue\n",
+    "timestamp": "2018-05-02T02:15:08.000Z",
+    "type": "message",
+    "channelId": "chatdown"
+  }
+]

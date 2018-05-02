@@ -6,23 +6,42 @@ using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Core.Extensions;
 using Microsoft.Bot.Schema;
 using Newtonsoft.Json;
+using Microsoft.Bot.Builder.Dialogs;
+using ContosoCafeBot.Dialogs;
 
 namespace ContosoCafeBot
 {
     public class CafeBot : IBot
     {
-        /// <summary>
-        /// Every Conversation turn for our EchoBot will call this method. In here
-        /// the bot checks the Activty type to verify it's a message, bumps the 
-        /// turn conversation 'Turn' count, and then echoes the users typing
-        /// back to them. 
-        /// </summary>
-        /// <param name="context">Turn scoped context containing all the data needed
-        /// for processing this conversation turn. </param>        
+        private DialogSet _dialogs;
+        public CafeBot()
+        {
+            _dialogs = new DialogSet();
+            _dialogs.Add("WhoAreYou", new WhoAreYou());
+            /*
+            _dialogs.Add("firstRun",
+                new WaterfallStep[]
+                {
+                    async (dc, args, next) =>
+                    {
+                         await dc.Context.SendActivity("Welcome! We need to ask a few questions to get started.");
+                         await dc.Begin("getProfile");
+                    },
+                    async (dc, args, next) =>
+                    {
+                        await dc.Context.SendActivity($"Thanks {args["name"]} I have your phone number as {args["phone"]}!");
+                        await dc.End();
+                    }
+                }
+            );*/
+            
+
+        }
         public async Task OnTurn(ITurnContext context)
         {
             var userState = context.GetUserState<CafeBotUserState>();
             var conversationState = context.GetConversationState<CafeBotConvState>();
+         
 
             switch (context.Activity.Type)
 
@@ -43,17 +62,20 @@ namespace ContosoCafeBot
                     break;
                 case ActivityTypes.Message:
                     //await context.SendActivity($"Turn {state.TurnCount}: You sent '{context.Activity.Text}'");
-
+                    var dc = _dialogs.CreateContext(context, conversationState.);
                     // top level dispatch
-                    switch(context.Activity.Text)
+                    switch (context.Activity.Text)
                     {
                         case "hi":
                             await context.SendActivity("Hello, I'm the contoso cafe bot. How can I help you?");
-                            //await context.SendActivity($"Turn {state.TurnCount}: You sent '{context.Activity.Text}'");
+                            //await context.SendActivity(CreateResponse(context.Activity, createWelcomeCardAttachment()));
                             break;
                         case "book table":
                             break;
                         case "find locations":
+                            break;
+                        case "Who are you?":
+                            await context.SendActivity("Hello, I'm the contoso cafe bot. What is your name?");
                             break;
                         default:
                             await context.SendActivity("Sorry, I do not understand.");
@@ -63,6 +85,7 @@ namespace ContosoCafeBot
                     break;
             }
         }
+        
         private Activity CreateResponse(Activity activity, Attachment attachment)
         {
             var response = activity.CreateReply();

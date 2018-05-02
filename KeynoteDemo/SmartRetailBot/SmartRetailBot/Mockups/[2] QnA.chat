@@ -1,0 +1,11 @@
+﻿user=vishwac
+bot=cafebot
+
+user:What's your returns policy?
+bot:You can return unworn items within seven days for a full refund.
+
+user:What about after that?
+bot:After seven days, you can return unworn items for store credit.
+
+user:What are your locations
+bot:We have Cafe locations in Redmond, Seattle, Renton and Bellevue
