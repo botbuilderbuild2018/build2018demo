@@ -1,4 +1,4 @@
-> # Product lookup
+> # Intent definitions
 
 ## Product lookup
 - I want a new watch
@@ -7,7 +7,7 @@
 - Show me the latest watches you have
 - Pull up your catalogue for watches
 
-> entity definitions
+> # entity definitions
 
 $productType:watch=
 - watch
