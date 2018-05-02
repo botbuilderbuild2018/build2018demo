@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
-namespace SmartRetailBot
+namespace Microsoft.Bot.Samples.CafeBotDotNet
 {
     public class Startup
     {
@@ -31,28 +31,39 @@ namespace SmartRetailBot
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton(_ => Configuration);
-            services.AddBot<LitwareRoot>(options =>
+            services.AddBot<HelloBot>(options =>
             {
                 options.CredentialProvider = new ConfigurationCredentialProvider(Configuration);
+                // If you want to get all intents scorings, add verbose in luisOptions
+                /*var luisOptions = new LuisRequest { Verbose = true };
+                options.Middleware.Add(new LuisRecognizerMiddleware(
+                    new LuisModel(
+                        "586c6eba-c656-4a86-adc5-b963769bbaed", 
+                        "be30825b782843dcbbe520ac5338f567", 
+                        new Uri("https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/")), luisOptions: luisOptions));
+
+                options.Middleware.Add(new QnAMakerMiddleware(
+                                new QnAMakerMiddlewareOptions()
+                                {
+                                    SubscriptionKey = "d534abd71a0d438d95d5a001025ee074",
+                                    KnowledgeBaseId = "40080f40-0200-482e-8e55-fae74d973490",
+                                    EndActivityRoutingOnAnswer = true
+                                }));*/
 
                 var luisOptions = new LuisRequest { Verbose = true };
                 options.Middleware.Add(new LuisRecognizerMiddleware(
                     new LuisModel(
-                        "653f443e-da2d-43ee-ae47-8da7a836fc25", 
-                        "be30825b782843dcbbe520ac5338f567", 
+                        "653f443e-da2d-43ee-ae47-8da7a836fc25",
+                        "be30825b782843dcbbe520ac5338f567",
                         new Uri("https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/")), luisOptions: luisOptions));
-                        
-                var qnamakerEndpoint = new QnAMakerEndpoint
-                {
-                    EndpointKey = "d534abd71a0d438d95d5a001025ee074",
-                    Host = "https://westus.api.cognitive.microsoft.com/qnamaker/v2.0",
-                    KnowledgeBaseId = "40080f40-0200-482e-8e55-fae74d973490"
-                };
-                var qnamakerOptions = new QnAMakerMiddlewareOptions
-                {
-                    EndActivityRoutingOnAnswer = true
-                };
-                options.Middleware.Add(new QnAMakerMiddleware(qnamakerEndpoint, qnamakerOptions));
+
+                options.Middleware.Add(new QnAMakerMiddleware(
+                                new QnAMakerMiddlewareOptions()
+                                {
+                                    SubscriptionKey = "d534abd71a0d438d95d5a001025ee074",
+                                    KnowledgeBaseId = "40080f40-0200-482e-8e55-fae74d973490",
+                                    EndActivityRoutingOnAnswer = true
+                                }));
 
             });
         }

@@ -1,0 +1,41 @@
+Label	Weight	Text
+l_cafebotluisapp420257_communication preference	1.1	i prefer to get text updates
+l_cafebotluisapp420257_communication preference	1.1	i prefer to get text updates
+l_cafebotluisapp420257_communication preference	1.1	i prefer to get text updates
+l_cafebotluisapp420257_communication preference	1.1	i prefer to get text updates
+l_cafebotluisapp420257_communication preference	1.1	i prefer to get text updates
+l_cafebotluisapp420257_communication preference	1.1	i prefer to get text updates
+l_cafebotluisapp420257_communication preference	1.1	i prefer to get text updates
+l_cafebotluisapp420257_communication preference	1.1	i prefer to get text updates
+l_cafebotluisapp420257_communication preference	1.1	i prefer to get text updates
+l_cafebotluisapp420257_communication preference	1.1	i prefer to get text updates
+l_cafebotluisapp420257_greeting	1.1	hi bot
+l_cafebotluisapp420257_greeting	1.1	hi bot
+l_cafebotluisapp420257_greeting	1.1	hi bot
+l_cafebotluisapp420257_greeting	1.1	hi bot
+l_cafebotluisapp420257_greeting	1.1	hi bot
+l_cafebotluisapp420257_greeting	1.1	hi bot
+l_cafebotluisapp420257_greeting	1.1	hi bot
+l_cafebotluisapp420257_greeting	1.1	hi bot
+l_cafebotluisapp420257_greeting	1.1	hi bot
+l_cafebotluisapp420257_greeting	1.1	hi bot
+l_cafebotluisapp420257_who are you intent	1.1	what's your name?
+l_cafebotluisapp420257_who are you intent	1.1	what's your name?
+l_cafebotluisapp420257_who are you intent	1.1	what's your name?
+l_cafebotluisapp420257_who are you intent	1.1	what's your name?
+l_cafebotluisapp420257_who are you intent	1.1	what's your name?
+l_cafebotluisapp420257_who are you intent	1.1	what's your name?
+l_cafebotluisapp420257_who are you intent	1.1	what's your name?
+l_cafebotluisapp420257_who are you intent	1.1	what's your name?
+l_cafebotluisapp420257_who are you intent	1.1	what's your name?
+l_cafebotluisapp420257_who are you intent	1.1	what's your name?
+q_cafebot	1.1	who is your ceo
+q_cafebot	1.1	who is your ceo
+q_cafebot	1.1	who is your ceo
+q_cafebot	1.1	who is your ceo
+q_cafebot	1.1	who is your ceo
+q_cafebot	1.1	who is your ceo
+q_cafebot	1.1	who is your ceo
+q_cafebot	1.1	who is your ceo
+q_cafebot	1.1	who is your ceo
+q_cafebot	1.1	who is your ceo

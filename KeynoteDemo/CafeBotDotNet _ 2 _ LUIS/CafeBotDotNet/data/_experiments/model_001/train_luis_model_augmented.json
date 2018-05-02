@@ -1,0 +1,132 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "Dispatch",
+  "name": "mydemobotDispatch",
+  "desc": "Dispatch model for mydemobotDispatch",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "l_cafebotluisapp420257_communication preference"
+    },
+    {
+      "name": "l_cafebotluisapp420257_greeting"
+    },
+    {
+      "name": "l_cafebotluisapp420257_who are you intent"
+    },
+    {
+      "name": "q_cafebot"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "send me a text message to get in touch with me",
+      "intent": "l_cafebotluisapp420257_communication preference",
+      "entities": []
+    },
+    {
+      "text": "i prefer to receive phone call",
+      "intent": "l_cafebotluisapp420257_communication preference",
+      "entities": []
+    },
+    {
+      "text": "i prefer to get text updates",
+      "intent": "l_cafebotluisapp420257_communication preference",
+      "entities": []
+    },
+    {
+      "text": "set my communication preference to phone call",
+      "intent": "l_cafebotluisapp420257_communication preference",
+      "entities": []
+    },
+    {
+      "text": "hello bot",
+      "intent": "l_cafebotluisapp420257_greeting",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "l_cafebotluisapp420257_greeting",
+      "entities": []
+    },
+    {
+      "text": "hi bot",
+      "intent": "l_cafebotluisapp420257_greeting",
+      "entities": []
+    },
+    {
+      "text": "hiya",
+      "intent": "l_cafebotluisapp420257_greeting",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "l_cafebotluisapp420257_greeting",
+      "entities": []
+    },
+    {
+      "text": "who are you?",
+      "intent": "l_cafebotluisapp420257_who are you intent",
+      "entities": []
+    },
+    {
+      "text": "what is your name?",
+      "intent": "l_cafebotluisapp420257_who are you intent",
+      "entities": []
+    },
+    {
+      "text": "what's your name?",
+      "intent": "l_cafebotluisapp420257_who are you intent",
+      "entities": []
+    },
+    {
+      "text": "how should i address you?",
+      "intent": "l_cafebotluisapp420257_who are you intent",
+      "entities": []
+    },
+    {
+      "text": "are you hiring",
+      "intent": "q_cafebot",
+      "entities": []
+    },
+    {
+      "text": "are you looking for a barrista",
+      "intent": "q_cafebot",
+      "entities": []
+    },
+    {
+      "text": "who is your ceo",
+      "intent": "q_cafebot",
+      "entities": []
+    },
+    {
+      "text": "who owns contoso cafe",
+      "intent": "q_cafebot",
+      "entities": []
+    },
+    {
+      "text": "can i come work for contoso cafe?",
+      "intent": "q_cafebot",
+      "entities": []
+    },
+    {
+      "text": "do you have job openings?",
+      "intent": "q_cafebot",
+      "entities": []
+    },
+    {
+      "text": "what are your locations",
+      "intent": "q_cafebot",
+      "entities": []
+    }
+  ],
+  "patterns": [],
+  "patternAnyEntities": [],
+  "prebuiltEntities": []
+}

@@ -1,0 +1,41 @@
+Label	Weight	Text
+l_cafebotluisapp420257_communication preference	1	i prefer to receive phone call
+l_cafebotluisapp420257_communication preference	1	i prefer to receive phone call
+l_cafebotluisapp420257_communication preference	1	i prefer to receive phone call
+l_cafebotluisapp420257_communication preference	1	i prefer to receive phone call
+l_cafebotluisapp420257_communication preference	1	i prefer to receive phone call
+l_cafebotluisapp420257_communication preference	1	i prefer to receive phone call
+l_cafebotluisapp420257_communication preference	1	i prefer to receive phone call
+l_cafebotluisapp420257_communication preference	1	i prefer to receive phone call
+l_cafebotluisapp420257_communication preference	1	i prefer to receive phone call
+l_cafebotluisapp420257_communication preference	1	i prefer to receive phone call
+l_cafebotluisapp420257_greeting	1	hi
+l_cafebotluisapp420257_greeting	1	hi
+l_cafebotluisapp420257_greeting	1	hi
+l_cafebotluisapp420257_greeting	1	hi
+l_cafebotluisapp420257_greeting	1	hi
+l_cafebotluisapp420257_greeting	1	hi
+l_cafebotluisapp420257_greeting	1	hi
+l_cafebotluisapp420257_greeting	1	hi
+l_cafebotluisapp420257_greeting	1	hi
+l_cafebotluisapp420257_greeting	1	hi
+l_cafebotluisapp420257_who are you intent	1	what is your name?
+l_cafebotluisapp420257_who are you intent	1	what is your name?
+l_cafebotluisapp420257_who are you intent	1	what is your name?
+l_cafebotluisapp420257_who are you intent	1	what is your name?
+l_cafebotluisapp420257_who are you intent	1	what is your name?
+l_cafebotluisapp420257_who are you intent	1	what is your name?
+l_cafebotluisapp420257_who are you intent	1	what is your name?
+l_cafebotluisapp420257_who are you intent	1	what is your name?
+l_cafebotluisapp420257_who are you intent	1	what is your name?
+l_cafebotluisapp420257_who are you intent	1	what is your name?
+q_cafebot	1	are you looking for a barrista
+q_cafebot	1	are you looking for a barrista
+q_cafebot	1	are you looking for a barrista
+q_cafebot	1	are you looking for a barrista
+q_cafebot	1	are you looking for a barrista
+q_cafebot	1	are you looking for a barrista
+q_cafebot	1	are you looking for a barrista
+q_cafebot	1	are you looking for a barrista
+q_cafebot	1	are you looking for a barrista
+q_cafebot	1	are you looking for a barrista

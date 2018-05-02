@@ -1,0 +1,49 @@
+{
+    "name": "LitwareLifestyleBot",
+    "description": "",
+    "secretKey": "",
+    "services": [
+        {
+            "appId": "",
+            "id": "http://localhost:3978/api/messages",
+            "type": "endpoint",
+            "appPassword": "",
+            "endpoint": "http://localhost:3978/api/messages",
+            "name": "LitwareLifestyleBot"
+        },
+        {
+            "id": "653f443e-da2d-43ee-ae47-8da7a836fc25",
+            "type": "luis",
+            "name": "litwareLUISApp",
+            "version": "0.1",
+            "appId": "653f443e-da2d-43ee-ae47-8da7a836fc25",
+            "authoringKey": "be30825b782843dcbbe520ac5338f567",
+            "subscriptionKey": "be30825b782843dcbbe520ac5338f567"
+        },
+        {
+            "kbId": "b5534d70-bded-45e1-998a-5945174d4ff3",
+            "name": "litwareQnAapp",
+            "type": "qna",
+            "subscriptionKey": "028428aec74d4380b13a24b09d0968b2",
+            "id": "b5534d70-bded-45e1-998a-5945174d4ff3",
+            "endpointKey": "09e2d55b-a44c-41b6-a08a-76a7df9ddffe",
+            "hostname": "https://contosocafeqnamaker.azurewebsites.net"
+        },
+        {
+            "type": "abs",
+            "name": "retaildemobotbuild2018",
+            "id": "retaildemobotbuild2018",
+            "tenantId": "44bd8c0c-5de3-47e3-a011-d125c70aab59",
+            "subscriptionId": "087822e7-ec21-4d3b-8ad4-92da1098178c",
+            "resourceGroup": "build2018"
+        },
+        {
+            "appId": "c74868a2-01f6-4459-b5e9-7ffc6011ee4e",
+            "id": "https://retaildemobotbuild2018.azurewebsites.net/api/messages",
+            "type": "endpoint",
+            "appPassword": "Y%apW57&y6=)m=m?",
+            "endpoint": "https://retaildemobotbuild2018.azurewebsites.net/api/messages",
+            "name": "retaildemobotbuild2018"
+        }
+    ]
+}

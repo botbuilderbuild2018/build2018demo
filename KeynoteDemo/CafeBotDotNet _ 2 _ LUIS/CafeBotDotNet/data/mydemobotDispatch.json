@@ -1,0 +1,18 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "mydemobotDispatch",
+  "desc": "Dispatch model for mydemobotDispatch",
+  "culture": "en-us",
+  "intents": [],
+  "entities": [],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [],
+  "patterns": [],
+  "patternAnyEntities": [],
+  "prebuiltEntities": []
+}

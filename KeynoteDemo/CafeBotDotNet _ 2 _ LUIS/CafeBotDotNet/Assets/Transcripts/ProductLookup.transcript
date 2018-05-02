@@ -3,19 +3,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "a0966357-ae6e-4b18-a304-16efcc219e53",
+    "id": "965ec386-ba95-4ec0-9b0e-a31af3beeb4c",
     "recipient": {
-      "id": "1216fcda-a196-3618-bd2b-05c3794861bb",
+      "id": "5170b5c5-c881-3a8f-bec1-f93577fa1260",
       "name": "cafebot",
       "role": "bot"
     },
     "from": {
-      "id": "c91a3a2a-b71c-38e3-af99-852639dec10c",
+      "id": "3c5a4f31-77b5-3b4d-b50a-7d72402695c5",
       "name": "vishwac",
       "role": "user"
     },
     "text": "I want a new watch",
-    "timestamp": "2018-05-02T17:15:15.000Z",
+    "timestamp": "2018-05-02T02:59:39.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -23,19 +23,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "3f6283de-e6f9-4493-a364-8f02462a6802",
+    "id": "b61be9f9-9540-4722-b45c-a4347d14dcb3",
     "recipient": {
-      "id": "c91a3a2a-b71c-38e3-af99-852639dec10c",
+      "id": "3c5a4f31-77b5-3b4d-b50a-7d72402695c5",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "1216fcda-a196-3618-bd2b-05c3794861bb",
+      "id": "5170b5c5-c881-3a8f-bec1-f93577fa1260",
       "name": "cafebot",
       "role": "bot"
     },
     "text": "I can help you with that! Let me see what I can find.",
-    "timestamp": "2018-05-02T17:15:17.000Z",
+    "timestamp": "2018-05-02T02:59:41.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -43,19 +43,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "4a596014-4f35-491c-9a8e-afcc390a80c1",
+    "id": "69d656a9-7900-454d-8f24-5ca26f5a2a3c",
     "recipient": {
-      "id": "c91a3a2a-b71c-38e3-af99-852639dec10c",
+      "id": "3c5a4f31-77b5-3b4d-b50a-7d72402695c5",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "1216fcda-a196-3618-bd2b-05c3794861bb",
+      "id": "5170b5c5-c881-3a8f-bec1-f93577fa1260",
       "name": "cafebot",
       "role": "bot"
     },
     "text": "Here's what I found.",
-    "timestamp": "2018-05-02T17:15:19.000Z",
+    "timestamp": "2018-05-02T02:59:43.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -81,19 +81,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "5d9879a4-9257-430e-b985-3045bcbf767f",
+    "id": "c279c65d-2b43-4c08-a087-71e236d499f1",
     "recipient": {
-      "id": "c91a3a2a-b71c-38e3-af99-852639dec10c",
+      "id": "3c5a4f31-77b5-3b4d-b50a-7d72402695c5",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "1216fcda-a196-3618-bd2b-05c3794861bb",
+      "id": "5170b5c5-c881-3a8f-bec1-f93577fa1260",
       "name": "cafebot",
       "role": "bot"
     },
     "text": "",
-    "timestamp": "2018-05-02T17:15:31.000Z",
+    "timestamp": "2018-05-02T02:59:55.000Z",
     "type": "message",
     "channelId": "chatdown",
     "attachmentLayout": "carousel"
@@ -102,39 +102,25 @@
     "attachments": [
       {
         "contentType": "application/vnd.microsoft.card.hero",
-        "content": {
-          "subtitle": "What do you think of these?",
-          "buttons": [
-            {
-              "type": "openUrl",
-              "title": "Not what I'm looking for",
-              "value": "locationInfo.storeImg"
-            },
-            {
-              "type": "imback",
-              "title": "These look great",
-              "value": "book a table in "
-            }
-          ]
-        }
+        "contentUrl": "cards\\productLookUpChoices.json"
       }
     ],
     "conversation": {
       "id": "1"
     },
-    "id": "145d053d-9325-471e-8b14-a75e7da4693a",
+    "id": "f5dd47ff-37df-47fc-92df-97b4bf042ec9",
     "recipient": {
-      "id": "c91a3a2a-b71c-38e3-af99-852639dec10c",
+      "id": "3c5a4f31-77b5-3b4d-b50a-7d72402695c5",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "1216fcda-a196-3618-bd2b-05c3794861bb",
+      "id": "5170b5c5-c881-3a8f-bec1-f93577fa1260",
       "name": "cafebot",
       "role": "bot"
     },
     "text": null,
-    "timestamp": "2018-05-02T17:15:35.000Z",
+    "timestamp": "2018-05-02T02:59:59.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -142,19 +128,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "40f021e9-282e-4aef-b32b-84f21dc28ef1",
+    "id": "51858449-9e2f-4927-b65e-9f1d8d563dcc",
     "recipient": {
-      "id": "1216fcda-a196-3618-bd2b-05c3794861bb",
+      "id": "5170b5c5-c881-3a8f-bec1-f93577fa1260",
       "name": "cafebot",
       "role": "bot"
     },
     "from": {
-      "id": "c91a3a2a-b71c-38e3-af99-852639dec10c",
+      "id": "3c5a4f31-77b5-3b4d-b50a-7d72402695c5",
       "name": "vishwac",
       "role": "user"
     },
     "text": "I like the first one.",
-    "timestamp": "2018-05-02T17:15:37.000Z",
+    "timestamp": "2018-05-02T03:00:01.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -162,19 +148,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "85f2002f-3f86-4952-9ae2-a61d90820e1b",
+    "id": "fd6a8194-8764-4ddb-bb76-eea221500987",
     "recipient": {
-      "id": "c91a3a2a-b71c-38e3-af99-852639dec10c",
+      "id": "3c5a4f31-77b5-3b4d-b50a-7d72402695c5",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "1216fcda-a196-3618-bd2b-05c3794861bb",
+      "id": "5170b5c5-c881-3a8f-bec1-f93577fa1260",
       "name": "cafebot",
       "role": "bot"
     },
     "text": "Sure, pulling up more information ..",
-    "timestamp": "2018-05-02T17:15:39.000Z",
+    "timestamp": "2018-05-02T03:00:03.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -182,83 +168,25 @@
     "attachments": [
       {
         "contentType": "application/vnd.microsoft.card.adaptive",
-        "content": {
-          "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-          "type": "AdaptiveCard",
-          "version": "1.0",
-          "body": [
-            {
-              "type": "ColumnSet",
-              "columns": [
-                {
-                  "type": "Column",
-                  "width": 2,
-                  "items": [
-                    {
-                      "type": "TextBlock",
-                      "text": "Litware Lifestyle"
-                    },
-                    {
-                      "type": "TextBlock",
-                      "text": "Litware Chronograph",
-                      "weight": "bolder",
-                      "size": "extraLarge",
-                      "spacing": "none"
-                    },
-                    {
-                      "type": "TextBlock",
-                      "text": "4.2 ★★★☆ (93) · $$",
-                      "isSubtle": true,
-                      "spacing": "none"
-                    },
-                    {
-                      "type": "TextBlock",
-                      "text": "[Tom LM said] I'm compelled to give this product 5 stars due to the high craftsman ship. I just love this watch!",
-                      "size": "small",
-                      "wrap": true
-                    }
-                  ]
-                },
-                {
-                  "type": "Column",
-                  "width": 1,
-                  "items": [
-                    {
-                      "type": "Image",
-                      "url": "https://build2018demostorage.blob.core.windows.net/vktest/shutterstock_267798710.jpg",
-                      "size": "auto"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": "Action.OpenUrl",
-              "title": "More Info",
-              "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-            }
-          ]
-        }
+        "contentUrl": "cards\\watchProfileCard.json"
       }
     ],
     "conversation": {
       "id": "1"
     },
-    "id": "d4009a4b-d72d-41bd-9c9e-ce57ead2ab0e",
+    "id": "cf3c09ae-1d53-44b2-95d7-14b911e5380f",
     "recipient": {
-      "id": "c91a3a2a-b71c-38e3-af99-852639dec10c",
+      "id": "3c5a4f31-77b5-3b4d-b50a-7d72402695c5",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "1216fcda-a196-3618-bd2b-05c3794861bb",
+      "id": "5170b5c5-c881-3a8f-bec1-f93577fa1260",
       "name": "cafebot",
       "role": "bot"
     },
     "text": null,
-    "timestamp": "2018-05-02T17:15:43.000Z",
+    "timestamp": "2018-05-02T03:00:07.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -266,19 +194,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "d6147e3b-83ab-4466-9a59-c8c6a494227d",
+    "id": "d9e189c6-bf4d-4e66-a7b3-f6cd6087ae23",
     "recipient": {
-      "id": "1216fcda-a196-3618-bd2b-05c3794861bb",
+      "id": "5170b5c5-c881-3a8f-bec1-f93577fa1260",
       "name": "cafebot",
       "role": "bot"
     },
     "from": {
-      "id": "c91a3a2a-b71c-38e3-af99-852639dec10c",
+      "id": "3c5a4f31-77b5-3b4d-b50a-7d72402695c5",
       "name": "vishwac",
       "role": "user"
     },
     "text": "That's nice! Thank you.",
-    "timestamp": "2018-05-02T17:15:45.000Z",
+    "timestamp": "2018-05-02T03:00:09.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -286,19 +214,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "d7edd41f-0b2c-4918-b0b2-601361b5e65f",
+    "id": "f3db7791-f721-4746-a007-1fc928a13e08",
     "recipient": {
-      "id": "c91a3a2a-b71c-38e3-af99-852639dec10c",
+      "id": "3c5a4f31-77b5-3b4d-b50a-7d72402695c5",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "1216fcda-a196-3618-bd2b-05c3794861bb",
+      "id": "5170b5c5-c881-3a8f-bec1-f93577fa1260",
       "name": "cafebot",
       "role": "bot"
     },
     "text": "Sure, you are most welcome!\n",
-    "timestamp": "2018-05-02T17:15:47.000Z",
+    "timestamp": "2018-05-02T03:00:11.000Z",
     "type": "message",
     "channelId": "chatdown"
   }

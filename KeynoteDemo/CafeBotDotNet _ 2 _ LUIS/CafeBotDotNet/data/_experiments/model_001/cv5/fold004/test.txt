@@ -1,0 +1,41 @@
+Label	Weight	Text
+l_cafebotluisapp420257_communication preference	1.2	set my communication preference to phone call
+l_cafebotluisapp420257_communication preference	1.2	set my communication preference to phone call
+l_cafebotluisapp420257_communication preference	1.2	set my communication preference to phone call
+l_cafebotluisapp420257_communication preference	1.2	set my communication preference to phone call
+l_cafebotluisapp420257_communication preference	1.2	set my communication preference to phone call
+l_cafebotluisapp420257_communication preference	1.2	set my communication preference to phone call
+l_cafebotluisapp420257_communication preference	1.2	set my communication preference to phone call
+l_cafebotluisapp420257_communication preference	1.2	set my communication preference to phone call
+l_cafebotluisapp420257_communication preference	1.2	set my communication preference to phone call
+l_cafebotluisapp420257_communication preference	1.2	set my communication preference to phone call
+l_cafebotluisapp420257_greeting	1.2	hello
+l_cafebotluisapp420257_greeting	1.2	hello
+l_cafebotluisapp420257_greeting	1.2	hello
+l_cafebotluisapp420257_greeting	1.2	hello
+l_cafebotluisapp420257_greeting	1.2	hello
+l_cafebotluisapp420257_greeting	1.2	hello
+l_cafebotluisapp420257_greeting	1.2	hello
+l_cafebotluisapp420257_greeting	1.2	hello
+l_cafebotluisapp420257_greeting	1.2	hello
+l_cafebotluisapp420257_greeting	1.2	hello
+l_cafebotluisapp420257_who are you intent	1.2	how should i address you?
+l_cafebotluisapp420257_who are you intent	1.2	how should i address you?
+l_cafebotluisapp420257_who are you intent	1.2	how should i address you?
+l_cafebotluisapp420257_who are you intent	1.2	how should i address you?
+l_cafebotluisapp420257_who are you intent	1.2	how should i address you?
+l_cafebotluisapp420257_who are you intent	1.2	how should i address you?
+l_cafebotluisapp420257_who are you intent	1.2	how should i address you?
+l_cafebotluisapp420257_who are you intent	1.2	how should i address you?
+l_cafebotluisapp420257_who are you intent	1.2	how should i address you?
+l_cafebotluisapp420257_who are you intent	1.2	how should i address you?
+q_cafebot	1.2	can i come work for contoso cafe?
+q_cafebot	1.2	can i come work for contoso cafe?
+q_cafebot	1.2	can i come work for contoso cafe?
+q_cafebot	1.2	can i come work for contoso cafe?
+q_cafebot	1.2	can i come work for contoso cafe?
+q_cafebot	1.2	can i come work for contoso cafe?
+q_cafebot	1.2	can i come work for contoso cafe?
+q_cafebot	1.2	can i come work for contoso cafe?
+q_cafebot	1.2	can i come work for contoso cafe?
+q_cafebot	1.2	can i come work for contoso cafe?

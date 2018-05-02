@@ -1,0 +1,41 @@
+Label	Weight	Text
+l_cafebotluisapp420257_communication preference	1.2	send me a text message to get in touch with me
+l_cafebotluisapp420257_communication preference	1.2	send me a text message to get in touch with me
+l_cafebotluisapp420257_communication preference	1.2	send me a text message to get in touch with me
+l_cafebotluisapp420257_communication preference	1.2	send me a text message to get in touch with me
+l_cafebotluisapp420257_communication preference	1.2	send me a text message to get in touch with me
+l_cafebotluisapp420257_communication preference	1.2	send me a text message to get in touch with me
+l_cafebotluisapp420257_communication preference	1.2	send me a text message to get in touch with me
+l_cafebotluisapp420257_communication preference	1.2	send me a text message to get in touch with me
+l_cafebotluisapp420257_communication preference	1.2	send me a text message to get in touch with me
+l_cafebotluisapp420257_communication preference	1.2	send me a text message to get in touch with me
+l_cafebotluisapp420257_greeting	1.2	hello bot
+l_cafebotluisapp420257_greeting	1.2	hello bot
+l_cafebotluisapp420257_greeting	1.2	hello bot
+l_cafebotluisapp420257_greeting	1.2	hello bot
+l_cafebotluisapp420257_greeting	1.2	hello bot
+l_cafebotluisapp420257_greeting	1.2	hello bot
+l_cafebotluisapp420257_greeting	1.2	hello bot
+l_cafebotluisapp420257_greeting	1.2	hello bot
+l_cafebotluisapp420257_greeting	1.2	hello bot
+l_cafebotluisapp420257_greeting	1.2	hello bot
+l_cafebotluisapp420257_who are you intent	1.2	who are you?
+l_cafebotluisapp420257_who are you intent	1.2	who are you?
+l_cafebotluisapp420257_who are you intent	1.2	who are you?
+l_cafebotluisapp420257_who are you intent	1.2	who are you?
+l_cafebotluisapp420257_who are you intent	1.2	who are you?
+l_cafebotluisapp420257_who are you intent	1.2	who are you?
+l_cafebotluisapp420257_who are you intent	1.2	who are you?
+l_cafebotluisapp420257_who are you intent	1.2	who are you?
+l_cafebotluisapp420257_who are you intent	1.2	who are you?
+l_cafebotluisapp420257_who are you intent	1.2	who are you?
+q_cafebot	1.2	are you hiring
+q_cafebot	1.2	are you hiring
+q_cafebot	1.2	are you hiring
+q_cafebot	1.2	are you hiring
+q_cafebot	1.2	are you hiring
+q_cafebot	1.2	are you hiring
+q_cafebot	1.2	are you hiring
+q_cafebot	1.2	are you hiring
+q_cafebot	1.2	are you hiring
+q_cafebot	1.2	are you hiring

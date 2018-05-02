@@ -1,0 +1,47 @@
+Label	Weight	Text
+l_cafebotluisapp420257_communication preference	1	i prefer to get text updates
+l_cafebotluisapp420257_communication preference	1	i prefer to receive phone call
+l_cafebotluisapp420257_communication preference	1	set my communication preference to phone call
+l_cafebotluisapp420257_communication preference	1	i prefer to get text updates
+l_cafebotluisapp420257_communication preference	1	i prefer to receive phone call
+l_cafebotluisapp420257_communication preference	1	set my communication preference to phone call
+l_cafebotluisapp420257_communication preference	1	i prefer to get text updates
+l_cafebotluisapp420257_communication preference	1	i prefer to receive phone call
+l_cafebotluisapp420257_communication preference	1	set my communication preference to phone call
+l_cafebotluisapp420257_communication preference	1	i prefer to get text updates
+l_cafebotluisapp420257_communication preference	1	i prefer to receive phone call
+l_cafebotluisapp420257_communication preference	1	set my communication preference to phone call
+l_cafebotluisapp420257_greeting	1	hello
+l_cafebotluisapp420257_greeting	1	hi
+l_cafebotluisapp420257_greeting	1	hi bot
+l_cafebotluisapp420257_greeting	1	hello bot
+l_cafebotluisapp420257_greeting	1	hello
+l_cafebotluisapp420257_greeting	1	hi
+l_cafebotluisapp420257_greeting	1	hi bot
+l_cafebotluisapp420257_greeting	1	hello bot
+l_cafebotluisapp420257_greeting	1	hello
+l_cafebotluisapp420257_greeting	1	hi
+l_cafebotluisapp420257_greeting	1	hi bot
+l_cafebotluisapp420257_greeting	1	hello bot
+l_cafebotluisapp420257_who are you intent	1	how should i address you?
+l_cafebotluisapp420257_who are you intent	1	who are you?
+l_cafebotluisapp420257_who are you intent	1	what's your name?
+l_cafebotluisapp420257_who are you intent	1	how should i address you?
+l_cafebotluisapp420257_who are you intent	1	who are you?
+l_cafebotluisapp420257_who are you intent	1	what's your name?
+l_cafebotluisapp420257_who are you intent	1	how should i address you?
+l_cafebotluisapp420257_who are you intent	1	who are you?
+l_cafebotluisapp420257_who are you intent	1	what's your name?
+l_cafebotluisapp420257_who are you intent	1	how should i address you?
+l_cafebotluisapp420257_who are you intent	1	who are you?
+l_cafebotluisapp420257_who are you intent	1	what's your name?
+q_cafebot	1.2	who is your ceo
+q_cafebot	1.2	who owns contoso cafe
+q_cafebot	1.2	are you looking for a barrista
+q_cafebot	1.2	what are your locations
+q_cafebot	1.2	can i come work for contoso cafe?
+q_cafebot	1.2	are you hiring
+q_cafebot	1.2	who is your ceo
+q_cafebot	1.2	who owns contoso cafe
+q_cafebot	1.2	are you looking for a barrista
+q_cafebot	1.2	what are your locations

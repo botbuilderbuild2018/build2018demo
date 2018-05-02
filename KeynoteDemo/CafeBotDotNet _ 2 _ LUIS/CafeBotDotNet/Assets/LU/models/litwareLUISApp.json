@@ -1,0 +1,94 @@
+{
+  "intents": [
+    {
+      "name": "Greeting"
+    },
+    {
+      "name": "Product lookup"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [
+    {
+      "name": "productType",
+      "subLists": [
+        {
+          "canonicalForm": "watch",
+          "list": [
+            "watch",
+            "wrist watch",
+            "watches",
+            "timex",
+            "rolex",
+            "swiss watch"
+          ]
+        }
+      ],
+      "roles": []
+    }
+  ],
+  "regex_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "hi",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "good morning",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "good evening",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hiya",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "I want a new watch",
+      "intent": "Product lookup",
+      "entities": []
+    },
+    {
+      "text": "I'd like to buy a new watch",
+      "intent": "Product lookup",
+      "entities": []
+    },
+    {
+      "text": "Can you show me some watches?",
+      "intent": "Product lookup",
+      "entities": []
+    },
+    {
+      "text": "Show me the latest watches you have",
+      "intent": "Product lookup",
+      "entities": []
+    },
+    {
+      "text": "Pull up your catalogue for watches",
+      "intent": "Product lookup",
+      "entities": []
+    }
+  ],
+  "patterns": [],
+  "patternAnyEntities": [],
+  "prebuiltEntities": [],
+  "luis_schema_version": "3.0.0",
+  "versionId": "0.1",
+  "name": "litwareLUISApp",
+  "desc": "",
+  "culture": "en-us"
+}
