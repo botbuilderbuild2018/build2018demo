@@ -25,7 +25,7 @@ namespace SmartRetailBot
                         switch (topItem.key)
                         {
                             case "Greeting":
-                                await context.SendActivity($"Hello, I'm the contoso cafe bot. How can I help you?");
+                                await context.SendActivity($"Hello, I'm the Litware lifestyle bot. How can I help you?");
                                 break;
                             default:
                                 await context.SendActivity($"Sorry, I do not understand that.");
@@ -38,7 +38,7 @@ namespace SmartRetailBot
                     {
                         if (newMember.Id != context.Activity.Recipient.Id)
                         {
-                            await context.SendActivity("Hello and welcome to the Cafe bot.");
+                            await context.SendActivity("Hello and welcome to the Litware lifestyle bot.");
                         }
                     }
                     break;
