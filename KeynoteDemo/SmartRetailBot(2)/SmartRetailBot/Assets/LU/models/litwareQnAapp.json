@@ -1,0 +1,35 @@
+{
+  "urls": [],
+  "qnaList": [
+    {
+      "id": 0,
+      "answer": "You can return unworn items within seven days for a full refund.\r\n",
+      "questions": [
+        "What's your returns policy?"
+      ],
+      "metadata": [],
+      "source": "custom editorial"
+    },
+    {
+      "id": 0,
+      "answer": "After seven days, you can return unworn items for store credit.\r\n",
+      "questions": [
+        "What about after that?"
+      ],
+      "metadata": [],
+      "source": "custom editorial"
+    },
+    {
+      "id": 0,
+      "answer": "We have stores in Redmond, Seattle, Bellevue and Renton\r\n",
+      "questions": [
+        "What are your locations?",
+        "locations?",
+        "where can I find your store?"
+      ],
+      "metadata": [],
+      "source": "custom editorial"
+    }
+  ],
+  "name": "litwareQnAapp"
+}

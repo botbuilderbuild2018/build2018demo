@@ -1,0 +1,18 @@
+> # Product lookup
+
+## Product lookup
+- I want a new watch
+- I'd like to buy a new watch
+- Can you show me some watches?
+- Show me the latest watches you have
+- Pull up your catalogue for watches
+
+> entity definitions
+
+$productType:watch=
+- watch
+- wrist watch
+- watches
+- timex
+- rolex
+- swiss watch

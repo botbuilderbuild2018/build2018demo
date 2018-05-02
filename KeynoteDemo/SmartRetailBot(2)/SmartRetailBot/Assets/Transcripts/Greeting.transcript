@@ -1,0 +1,42 @@
+[
+  {
+    "conversation": {
+      "id": "1"
+    },
+    "id": "d5aad097-d1aa-4783-8b01-d74c3ff781c8",
+    "recipient": {
+      "id": "83cda35d-83e9-326b-9e8b-1f761004d313",
+      "name": "cafebot",
+      "role": "bot"
+    },
+    "from": {
+      "id": "f2ee935d-43a3-38f0-84c5-8e9a3ddc4fe1",
+      "name": "vishwac",
+      "role": "user"
+    },
+    "text": "hi",
+    "timestamp": "2018-05-02T02:14:47.000Z",
+    "type": "message",
+    "channelId": "chatdown"
+  },
+  {
+    "conversation": {
+      "id": "1"
+    },
+    "id": "4e184301-bc65-4620-94be-ce99fda8c91d",
+    "recipient": {
+      "id": "f2ee935d-43a3-38f0-84c5-8e9a3ddc4fe1",
+      "name": "vishwac",
+      "role": "user"
+    },
+    "from": {
+      "id": "83cda35d-83e9-326b-9e8b-1f761004d313",
+      "name": "cafebot",
+      "role": "bot"
+    },
+    "text": "Hello, I'm the Litware Lifestyle bot. How can I help you?\n",
+    "timestamp": "2018-05-02T02:14:49.000Z",
+    "type": "message",
+    "channelId": "chatdown"
+  }
+]

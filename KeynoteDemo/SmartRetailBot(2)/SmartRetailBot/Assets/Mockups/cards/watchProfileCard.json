@@ -29,7 +29,7 @@
             },
             {
               "type": "TextBlock",
-              "text": "[Tom LM said] I'm compelled to give this product 5 stars due to the high craftsman ship. I just love this watch!",
+              "text": "**Tom L. said** \"I'm compelled to give this product 5 stars due to the high craftsman ship. I just love this watch!\"",
               "size": "small",
               "wrap": true
             }
