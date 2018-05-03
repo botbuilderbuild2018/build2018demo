@@ -5,9 +5,9 @@
     /// <summary>
     /// Class for storing conversation state. 
     /// </summary>
-    public class CafeBotConvState
+    public class CafeBotConvState : Dictionary<string, object>
     {
-        Dictionary<string, string> convContextKVPair;
+        public Dictionary<string, string> convContextKVPair;
         
     }
     

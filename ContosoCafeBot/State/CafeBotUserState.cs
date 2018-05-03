@@ -11,5 +11,6 @@ namespace ContosoCafeBot
     public class CafeBotUserState
     {
         public string name, preferredLocation;
+        public bool sendCards;
     }
 }
