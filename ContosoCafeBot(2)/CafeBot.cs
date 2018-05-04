@@ -9,6 +9,9 @@ using Newtonsoft.Json;
 using Microsoft.Bot.Builder.Dialogs;
 using ContosoCafeBot.Dialogs;
 using Newtonsoft.Json.Linq;
+using Microsoft.Bot.Builder.Ai.LUIS;
+using Microsoft.Bot.Builder.Ai.QnA;
+
 
 namespace ContosoCafeBot
 {
@@ -60,6 +63,7 @@ namespace ContosoCafeBot
 
                     if(!context.Responded)
                     {
+                        
                         // top level dispatch
                         switch (utterance)
                         {
@@ -70,12 +74,32 @@ namespace ContosoCafeBot
                             case "book table":
                                 await dc.Begin("BookTable");
                                 break;
-                            case "find locations":
-                                break;
                             case "who are you?":
                                 await dc.Begin("WhoAreYou");
                                 break;
                             default:
+                                //var qEndpoint = new QnAMakerEndpoint()
+                                //{
+                                //    Host = "https://contosocafeqnamaker.azurewebsites.net/qnamaker",
+                                //    EndpointKey = "09e2d55b-a44c-41b6-a08a-76a7df9ddffe",
+                                //    KnowledgeBaseId = "b5534d70-bded-45e1-998a-5945174d4ff3"
+                                //};
+                                //var qOptions = new QnAMakerOptions()
+                                //{
+                                //    ScoreThreshold = 0.4F,
+                                //    Top = 1
+                                //};
+                                //var qnamaker = new QnAMaker(qEndpoint, qOptions);
+                                //QueryResult[] qResult = await qnamaker.GetAnswers(context.Activity.Text);
+                                //if(qResult.Length == 0)
+                                //{
+                                //    await context.SendActivity("Sorry, I do not understand.");
+                                //    await context.SendActivity("You can say hi or book table or find locations");
+                                //} else
+                                //{
+                                //    await context.SendActivity(qResult[0].Answer);
+                                //}
+
                                 await context.SendActivity("Sorry, I do not understand.");
                                 await context.SendActivity("You can say hi or book table or find locations");
                                 break;

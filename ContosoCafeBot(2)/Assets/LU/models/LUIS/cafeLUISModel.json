@@ -4,9 +4,6 @@
       "name": "Book Table"
     },
     {
-      "name": "Communication preference"
-    },
-    {
       "name": "Greeting"
     },
     {
@@ -50,29 +47,6 @@
           "canonicalForm": "portland",
           "list": [
             "portland"
-          ]
-        }
-      ],
-      "roles": []
-    },
-    {
-      "name": "communicationOption",
-      "subLists": [
-        {
-          "canonicalForm": "call",
-          "list": [
-            "phone call",
-            "give me a ring",
-            "ring",
-            "call"
-          ]
-        },
-        {
-          "canonicalForm": "text",
-          "list": [
-            "message",
-            "text",
-            "text message"
           ]
         }
       ],
@@ -142,26 +116,6 @@
       ]
     },
     {
-      "text": "I prefer to get text updates",
-      "intent": "Communication preference",
-      "entities": []
-    },
-    {
-      "text": "send me a text message to get in touch with me",
-      "intent": "Communication preference",
-      "entities": []
-    },
-    {
-      "text": "set my communication preference to phone call",
-      "intent": "Communication preference",
-      "entities": []
-    },
-    {
-      "text": "I prefer to receive phone call",
-      "intent": "Communication preference",
-      "entities": []
-    },
-    {
       "text": "Hello",
       "intent": "Greeting",
       "entities": []
@@ -226,7 +180,7 @@
   ],
   "luis_schema_version": "3.0.0",
   "versionId": "0.1",
-  "name": "contosocafebuild2018demo",
+  "name": "cafeLUISModel",
   "desc": "",
   "culture": "en-us"
 }

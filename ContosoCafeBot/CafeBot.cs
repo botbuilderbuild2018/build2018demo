@@ -70,8 +70,6 @@ namespace ContosoCafeBot
                             case "book table":
                                 await dc.Begin("BookTable");
                                 break;
-                            case "find locations":
-                                break;
                             case "who are you?":
                                 await dc.Begin("WhoAreYou");
                                 break;

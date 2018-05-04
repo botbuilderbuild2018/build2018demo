@@ -19,8 +19,6 @@ $PREBUILT:datetimeV2
 
 $PREBUILT:number
 
-$PREBUILT:geography
-
 $cafeLocation:seattle=
 - seattle
 - seatac

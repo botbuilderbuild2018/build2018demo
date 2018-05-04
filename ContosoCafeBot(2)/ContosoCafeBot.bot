@@ -6,8 +6,8 @@
         {
             "appId": "",
             "appPassword": "",
-            "endpoint": "http://localhost:3978/api/messages",
-            "id": "http://localhost:3978/api/messages",
+            "endpoint": "http://localhost:3979/api/messages",
+            "id": "http://localhost:3979/api/messages",
             "name": "ContosoCafeBot",
             "type": "endpoint"
         },
@@ -43,7 +43,7 @@
             "subscriptionKey": "028428aec74d4380b13a24b09d0968b2",
             "id": "b5534d70-bded-45e1-998a-5945174d4ff3",
             "endpointKey": "09e2d55b-a44c-41b6-a08a-76a7df9ddffe",
-            "hostname": "https://contosocafeqnamaker.azurewebsites.net"
+            "hostname": "https://contosocafeqnamaker.azurewebsites.net/qnamaker"
         }
     ]
 }
