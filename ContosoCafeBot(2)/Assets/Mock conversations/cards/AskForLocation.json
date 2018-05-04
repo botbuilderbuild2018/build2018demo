@@ -4,6 +4,7 @@
   "version": "1.0",
   "body": [
     {
+      "speak": "<s>Serious Pie is a Pizza restaurant which is rated 9.3 by customers.</s>",
       "type": "ColumnSet",
       "columns": [
         {
@@ -33,25 +34,34 @@
     },
     {
       "type": "TextBlock",
-      "text": "How can I help?"
+      "text": "What city:"
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "cafeLocation",
+      "style": "compact",
+      "isMultiSelect": false,
+      "choices": [
+        {
+          "title": "Seattle",
+          "value": "seattle",
+          "isSelected": true
+        },
+        {
+          "title": "Redmond",
+          "value": "redmond"
+        },
+        {
+          "title": "Renton",
+          "value": "renton"
+        }
+      ]
     }
   ],
   "actions": [
     {
       "type": "Action.Submit",
-      "title": "Book a table",
-      "data": {
-        "intent": "bookTable",
-        "utterance": "book table"
-      }
-    },
-    {
-      "type": "Action.Submit",
-      "title": "Find cafe locations",
-      "data": {
-        "intent": "findCafe",
-        "utterance": "find locations"
-      }
+      "title": "Ok"
     }
   ]
 }
