@@ -41,14 +41,16 @@
       "type": "Action.Submit",
       "title": "Book a table",
       "data": {
-        "FoodChoice": "bookTable"
+        "intent": "bookTable",
+        "utterance": "book table"
       }
     },
     {
       "type": "Action.Submit",
       "title": "Find cafe locations",
       "data": {
-        "FoodChoice": "findCafe"
+        "intent": "findCafe",
+        "utterance": "find locations"
       }
     }
   ]

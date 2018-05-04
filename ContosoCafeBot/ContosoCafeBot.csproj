@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <Folder Include="Assets\LU\models\QnAMaker\" />
-    <Folder Include="Dialogs\" />
   </ItemGroup>
 
 </Project>

@@ -1,8 +1,0 @@
-user=vishwac
-bot=cafebot
-
-user: where can i get coffee?
-bot: did you have a city in mind? 
-user: seattle
-bot: Our seattle store is open now.
-[Attachment=cards/seattlestorecard.json adaptivecard]

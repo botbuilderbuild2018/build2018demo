@@ -8,6 +8,7 @@ using Microsoft.Bot.Schema;
 using Newtonsoft.Json;
 using Microsoft.Bot.Builder.Dialogs;
 using ContosoCafeBot.Dialogs;
+using Newtonsoft.Json.Linq;
 
 namespace ContosoCafeBot
 {
@@ -17,16 +18,21 @@ namespace ContosoCafeBot
         public CafeBot()
         {
             _dialogs = new DialogSet();
+
             _dialogs.Add("WhoAreYou", new WhoAreYou());
+            _dialogs.Add("BookTable", new BookTable());
 
         }
         public async Task OnTurn(ITurnContext context)
         {
+            string utterance = context.Activity.Text;
+            JObject cardData = (JObject)context.Activity.Value;
+            if (cardData != null && cardData.Property("intent") != null) utterance = cardData["utterance"].ToString();
+
             var userState = context.GetUserState<CafeBotUserState>();
             var conversationState = context.GetConversationState<CafeBotConvState>();
 
             switch (context.Activity.Type)
-
             {
                 case ActivityTypes.ConversationUpdate:
                     var newUserName = context.Activity.MembersAdded[0].Name;
@@ -45,28 +51,28 @@ namespace ContosoCafeBot
                     }
                     break;
                 case ActivityTypes.Message:
-                    //var state = ConversationState<Dictionary<string, object>>.Get(context);
+                    
+                    // create dialogContext
                     var dc = _dialogs.CreateContext(context, conversationState);
+                    // continue with any active dialogs
                     await dc.Continue();
+
                     if(!context.Responded)
                     {
                         // top level dispatch
-                        switch (context.Activity.Text)
+                        switch (utterance)
                         {
                             case "hi":
                                 await context.SendActivity("Hello, I'm the contoso cafe bot. How can I help you?");
                                 if (userState.sendCards) await context.SendActivity(CreateCardResponse(context.Activity, createWelcomeCardAttachment()));
                                 break;
                             case "book table":
+                                await dc.Begin("BookTable");
                                 break;
                             case "find locations":
                                 break;
-                            case "Who are you?":
-
-                                if (!context.Responded)
-                                {
-                                    await dc.Begin("WhoAreYou");
-                                }
+                            case "who are you?":
+                                await dc.Begin("WhoAreYou");
                                 break;
                             default:
                                 await context.SendActivity("Sorry, I do not understand.");
