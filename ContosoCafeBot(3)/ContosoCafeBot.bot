@@ -6,8 +6,8 @@
         {
             "appId": "",
             "appPassword": "",
-            "endpoint": "http://localhost:3979/api/messages",
-            "id": "http://localhost:3979/api/messages",
+            "endpoint": "http://localhost:3980/api/messages",
+            "id": "http://localhost:3980/api/messages",
             "name": "ContosoCafeBot",
             "type": "endpoint"
         },
