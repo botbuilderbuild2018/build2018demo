@@ -3,19 +3,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "b6db8f6f-1b49-4aa6-897d-a8e36d83cbf5",
+    "id": "0e8d8bc0-9609-4af8-af59-391152afbdad",
     "recipient": {
-      "id": "8f520f04-69ea-3c10-b9dd-bfdf9dd0223f",
+      "id": "48db2b40-0c8f-330f-a8b2-4ddf2c6fc15b",
       "name": "cafebot",
       "role": "bot"
     },
     "from": {
-      "id": "05a0eb5a-d43f-3048-b8c2-faf4cac33f68",
+      "id": "337ab29f-5589-316c-84ac-4afd6863f87a",
       "name": "vishwac",
       "role": "user"
     },
     "text": "hi",
-    "timestamp": "2018-05-02T20:49:25.000Z",
+    "timestamp": "2018-05-04T18:26:42.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -23,19 +23,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "c416db0b-c100-4bec-8347-a9a856e81a45",
+    "id": "62694b93-9efb-48fe-9021-0f689a7e49ba",
     "recipient": {
-      "id": "05a0eb5a-d43f-3048-b8c2-faf4cac33f68",
+      "id": "337ab29f-5589-316c-84ac-4afd6863f87a",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "8f520f04-69ea-3c10-b9dd-bfdf9dd0223f",
+      "id": "48db2b40-0c8f-330f-a8b2-4ddf2c6fc15b",
       "name": "cafebot",
       "role": "bot"
     },
     "text": "Hello, I'm the Litware Lifestyle bot. How can I help you?\n",
-    "timestamp": "2018-05-02T20:49:27.000Z",
+    "timestamp": "2018-05-04T18:26:44.000Z",
     "type": "message",
     "channelId": "chatdown"
   }

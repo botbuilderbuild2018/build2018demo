@@ -29,7 +29,6 @@ namespace SmartRetailBot
                                 break;
                             case "Product lookup":
                                 await context.SendActivity("I can help you with that! Let me see what I can find.");
-                                // TODO: add a 500ms delay
                                 await context.SendActivity("Here's what I found..");
                                 await context.SendActivity(createCarouselCards());
                                 await context.SendActivity(CreateResponse(context.Activity, CreateHeroCardAttachment()));
