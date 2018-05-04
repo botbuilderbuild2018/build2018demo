@@ -29,6 +29,7 @@ namespace SmartRetailBot
                                 break;
                             case "Product lookup":
                                 await context.SendActivity("I can help you with that! Let me see what I can find.");
+                                var results = lookUpResults(context.Activity.Text, luisResult);
                                 await context.SendActivity("Here's what I found..");
                                 await context.SendActivity(createCarouselCards());
                                 await context.SendActivity(CreateResponse(context.Activity, CreateHeroCardAttachment()));
@@ -50,7 +51,7 @@ namespace SmartRetailBot
                     break;
             }
         }
-
+        
         private Attachment CreateHeroCardAttachment()
         {
             return new HeroCard()
@@ -125,6 +126,10 @@ namespace SmartRetailBot
                 Subtitle = "Your bots — wherever your users are talking",
                 Text = "Build and connect intelligent bots to interact with your users naturally wherever they are, from text/sms to Skype, Slack, Office 365 mail and other popular services."
             }.ToAttachment();
+        }
+
+        private bool lookUpResults(string x, RecognizerResult luisResult) {
+            return true;
         }
     }
 }
