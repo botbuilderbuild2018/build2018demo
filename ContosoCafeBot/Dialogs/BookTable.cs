@@ -37,7 +37,7 @@ namespace ContosoCafeBot.Dialogs
                     async (dc, args, next) =>
                     {
                         dc.ActiveDialog.State["time"] = ((List<Microsoft.Bot.Builder.Prompts.DateTimeResult.DateTimeResolution>)args["Resolution"])[0].Value;
-                        await dc.Prompt("PartySizePrompt", "How many guests?");
+                        await dc.Prompt("numberPrompt", "How many guests?");
                     },
                     async (dc, args, next) =>
                     {
@@ -55,7 +55,7 @@ namespace ContosoCafeBot.Dialogs
                 }
             );
             Dialogs.Add("DateTimePrompt", new DateTimePrompt(Culture.English));
-            Dialogs.Add("PartySizePrompt", new NumberPrompt<int>(Culture.English));
+            Dialogs.Add("numberPrompt", new NumberPrompt<int>(Culture.English));
             Dialogs.Add("confirmPrompt", new ConfirmPrompt(Culture.English));
             Dialogs.Add("textPrompt", new TextPrompt());
         }

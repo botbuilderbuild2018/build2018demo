@@ -7,7 +7,7 @@ using Microsoft.Bot.Builder.Integration.AspNet.Core;
 using Microsoft.Bot.Builder.TraceExtensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
+using Microsoft.Bot.Builder.Ai.QnA;
 namespace ContosoCafeBot
 {
     public class Startup
@@ -66,6 +66,20 @@ namespace ContosoCafeBot
                 
                 options.Middleware.Add(new ConversationState<CafeBotConvState>(conversationDataStore));
                 options.Middleware.Add(new UserState<CafeBotUserState>(userDataStore));
+
+                // var qEndpoint = new QnAMakerEndpoint()
+                // {
+                //     Host = "https://contosocafeqnamaker.azurewebsites.net/qnamaker",
+                //     EndpointKey = "09e2d55b-a44c-41b6-a08a-76a7df9ddffe",
+                //     KnowledgeBaseId = "b5534d70-bded-45e1-998a-5945174d4ff3"
+                // };
+                // var qOptions = new QnAMakerMiddlewareOptions()
+                // {
+                //     ScoreThreshold = 0.4F,
+                //     Top = 1
+                // };
+                // var qnamaker = new QnAMaker(qEndpoint, qOptions);
+                // options.Middleware.Add(new QnAMakerMiddleware(qEndpoint, qOptions));
             });
         }
 

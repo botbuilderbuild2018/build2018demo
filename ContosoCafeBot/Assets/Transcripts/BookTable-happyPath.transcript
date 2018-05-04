@@ -3,19 +3,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "50f76953-2ebf-4826-9b28-14c0b8eb99d5",
+    "id": "01db7d05-cd2a-4b52-8564-57528698c617",
     "recipient": {
-      "id": "39a76a75-b4b5-3a29-9b03-c464e505df4e",
+      "id": "e666f12d-390d-34a1-9c70-661084284746",
       "name": "cafebot",
       "role": "bot"
     },
     "from": {
-      "id": "d7a02649-252c-3490-ad6e-e1c0e386b7fd",
+      "id": "af720226-98b1-3ef7-a462-f8c12e856ed6",
       "name": "vishwac",
       "role": "user"
     },
     "text": "book a table",
-    "timestamp": "2018-04-29T01:57:53.000Z",
+    "timestamp": "2018-05-04T18:01:29.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -23,19 +23,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "24463d73-7bc3-4e19-811a-ffede26fb7f1",
+    "id": "c072cf17-e7a3-4123-a4c0-edae4fd7209c",
     "recipient": {
-      "id": "d7a02649-252c-3490-ad6e-e1c0e386b7fd",
+      "id": "af720226-98b1-3ef7-a462-f8c12e856ed6",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "39a76a75-b4b5-3a29-9b03-c464e505df4e",
+      "id": "e666f12d-390d-34a1-9c70-661084284746",
       "name": "cafebot",
       "role": "bot"
     },
     "text": "Did you have a location in mind?",
-    "timestamp": "2018-04-29T01:57:55.000Z",
+    "timestamp": "2018-05-04T18:01:31.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -115,19 +115,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "b7fd4099-2692-4415-9e5b-9ee765419bdd",
+    "id": "b7b1815b-8527-4a04-9d55-5b685db723f7",
     "recipient": {
-      "id": "d7a02649-252c-3490-ad6e-e1c0e386b7fd",
+      "id": "af720226-98b1-3ef7-a462-f8c12e856ed6",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "39a76a75-b4b5-3a29-9b03-c464e505df4e",
+      "id": "e666f12d-390d-34a1-9c70-661084284746",
       "name": "cafebot",
       "role": "bot"
     },
     "text": null,
-    "timestamp": "2018-04-29T01:57:59.000Z",
+    "timestamp": "2018-05-04T18:01:35.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -135,19 +135,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "ba3c2859-be71-407d-97a6-6fe409a95420",
+    "id": "be924712-6033-4ce3-9cbf-ab00f9525a85",
     "recipient": {
-      "id": "39a76a75-b4b5-3a29-9b03-c464e505df4e",
+      "id": "e666f12d-390d-34a1-9c70-661084284746",
       "name": "cafebot",
       "role": "bot"
     },
     "from": {
-      "id": "d7a02649-252c-3490-ad6e-e1c0e386b7fd",
+      "id": "af720226-98b1-3ef7-a462-f8c12e856ed6",
       "name": "vishwac",
       "role": "user"
     },
     "text": "How about seattle?",
-    "timestamp": "2018-04-29T01:58:01.000Z",
+    "timestamp": "2018-05-04T18:01:37.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -155,19 +155,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "f38bc98b-d461-42b5-881e-ec4ad620bc79",
+    "id": "bd19fed0-f57d-4e71-b4cc-7ef7c49396c7",
     "recipient": {
-      "id": "d7a02649-252c-3490-ad6e-e1c0e386b7fd",
+      "id": "af720226-98b1-3ef7-a462-f8c12e856ed6",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "39a76a75-b4b5-3a29-9b03-c464e505df4e",
+      "id": "e666f12d-390d-34a1-9c70-661084284746",
       "name": "cafebot",
       "role": "bot"
     },
     "text": "Did you have a date in mind?",
-    "timestamp": "2018-04-29T01:58:03.000Z",
+    "timestamp": "2018-05-04T18:01:39.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -175,19 +175,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "4f6353b2-0fec-4367-815b-dc109d73b2ab",
+    "id": "36b9e6cb-c809-4fa5-9638-587a6266db2c",
     "recipient": {
-      "id": "39a76a75-b4b5-3a29-9b03-c464e505df4e",
+      "id": "e666f12d-390d-34a1-9c70-661084284746",
       "name": "cafebot",
       "role": "bot"
     },
     "from": {
-      "id": "d7a02649-252c-3490-ad6e-e1c0e386b7fd",
+      "id": "af720226-98b1-3ef7-a462-f8c12e856ed6",
       "name": "vishwac",
       "role": "user"
     },
     "text": "tomorrow",
-    "timestamp": "2018-04-29T01:58:05.000Z",
+    "timestamp": "2018-05-04T18:01:41.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -195,19 +195,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "bbfdf932-5818-4787-a51e-cee0c8e740ac",
+    "id": "a44d4886-3a5a-4543-97a4-b460cfadb5bf",
     "recipient": {
-      "id": "d7a02649-252c-3490-ad6e-e1c0e386b7fd",
+      "id": "af720226-98b1-3ef7-a462-f8c12e856ed6",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "39a76a75-b4b5-3a29-9b03-c464e505df4e",
+      "id": "e666f12d-390d-34a1-9c70-661084284746",
       "name": "cafebot",
       "role": "bot"
     },
     "text": "What time?",
-    "timestamp": "2018-04-29T01:58:07.000Z",
+    "timestamp": "2018-05-04T18:01:43.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -215,19 +215,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "a2aea80a-0690-43bd-9816-326cab83979a",
+    "id": "ce2eed12-e8de-471c-b209-0c7c1fd2febb",
     "recipient": {
-      "id": "39a76a75-b4b5-3a29-9b03-c464e505df4e",
+      "id": "e666f12d-390d-34a1-9c70-661084284746",
       "name": "cafebot",
       "role": "bot"
     },
     "from": {
-      "id": "d7a02649-252c-3490-ad6e-e1c0e386b7fd",
+      "id": "af720226-98b1-3ef7-a462-f8c12e856ed6",
       "name": "vishwac",
       "role": "user"
     },
     "text": "3PM",
-    "timestamp": "2018-04-29T01:58:09.000Z",
+    "timestamp": "2018-05-04T18:01:45.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -235,19 +235,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "e6326767-7e2a-4423-aca3-24caa8aaeb52",
+    "id": "e5c83008-85ab-4252-825e-9905eacb01d3",
     "recipient": {
-      "id": "d7a02649-252c-3490-ad6e-e1c0e386b7fd",
+      "id": "af720226-98b1-3ef7-a462-f8c12e856ed6",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "39a76a75-b4b5-3a29-9b03-c464e505df4e",
+      "id": "e666f12d-390d-34a1-9c70-661084284746",
       "name": "cafebot",
       "role": "bot"
     },
     "text": "How many guests?",
-    "timestamp": "2018-04-29T01:58:11.000Z",
+    "timestamp": "2018-05-04T18:01:47.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -255,19 +255,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "d4415b96-d1a0-459b-a058-90d54e0cf1c9",
+    "id": "720438ff-d37e-4220-93d2-7a7d4c9492b2",
     "recipient": {
-      "id": "39a76a75-b4b5-3a29-9b03-c464e505df4e",
+      "id": "e666f12d-390d-34a1-9c70-661084284746",
       "name": "cafebot",
       "role": "bot"
     },
     "from": {
-      "id": "d7a02649-252c-3490-ad6e-e1c0e386b7fd",
+      "id": "af720226-98b1-3ef7-a462-f8c12e856ed6",
       "name": "vishwac",
       "role": "user"
     },
     "text": "3",
-    "timestamp": "2018-04-29T01:58:13.000Z",
+    "timestamp": "2018-05-04T18:01:49.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -275,19 +275,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "6259dfbd-dec1-4ed5-9a98-a2c362666dac",
+    "id": "cb086940-6984-4d31-bee1-e2c000f31cf8",
     "recipient": {
-      "id": "d7a02649-252c-3490-ad6e-e1c0e386b7fd",
+      "id": "af720226-98b1-3ef7-a462-f8c12e856ed6",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "39a76a75-b4b5-3a29-9b03-c464e505df4e",
+      "id": "e666f12d-390d-34a1-9c70-661084284746",
       "name": "cafebot",
       "role": "bot"
     },
     "text": "Ok. Should I go ahead and book a table for 3 at seattle for tomorrow at 3PM?",
-    "timestamp": "2018-04-29T01:58:15.000Z",
+    "timestamp": "2018-05-04T18:01:51.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -397,19 +397,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "c0c3e942-a043-4986-b02e-320aa423a49d",
+    "id": "fff12a7f-c145-465f-87ce-c3a55c8152bb",
     "recipient": {
-      "id": "d7a02649-252c-3490-ad6e-e1c0e386b7fd",
+      "id": "af720226-98b1-3ef7-a462-f8c12e856ed6",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "39a76a75-b4b5-3a29-9b03-c464e505df4e",
+      "id": "e666f12d-390d-34a1-9c70-661084284746",
       "name": "cafebot",
       "role": "bot"
     },
     "text": null,
-    "timestamp": "2018-04-29T01:58:19.000Z",
+    "timestamp": "2018-05-04T18:01:55.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -417,19 +417,19 @@
     "conversation": {
       "id": "1"
     },
-    "id": "ef4048f2-7959-435b-a27d-12c4acea64fd",
+    "id": "c5264d20-b7cf-4344-9022-9dad455c6d53",
     "recipient": {
-      "id": "39a76a75-b4b5-3a29-9b03-c464e505df4e",
+      "id": "e666f12d-390d-34a1-9c70-661084284746",
       "name": "cafebot",
       "role": "bot"
     },
     "from": {
-      "id": "d7a02649-252c-3490-ad6e-e1c0e386b7fd",
+      "id": "af720226-98b1-3ef7-a462-f8c12e856ed6",
       "name": "vishwac",
       "role": "user"
     },
     "text": "yes",
-    "timestamp": "2018-04-29T01:58:21.000Z",
+    "timestamp": "2018-05-04T18:01:57.000Z",
     "type": "message",
     "channelId": "chatdown"
   },
@@ -437,19 +437,39 @@
     "conversation": {
       "id": "1"
     },
-    "id": "db7ea20a-6049-489a-b8f9-3895345ea518",
+    "id": "079bbb2f-5b76-4394-80ee-559944f51082",
     "recipient": {
-      "id": "d7a02649-252c-3490-ad6e-e1c0e386b7fd",
+      "id": "af720226-98b1-3ef7-a462-f8c12e856ed6",
       "name": "vishwac",
       "role": "user"
     },
     "from": {
-      "id": "39a76a75-b4b5-3a29-9b03-c464e505df4e",
+      "id": "e666f12d-390d-34a1-9c70-661084284746",
+      "name": "cafebot",
+      "role": "bot"
+    },
+    "text": "",
+    "timestamp": "2018-05-04T18:02:04.000Z",
+    "type": "typing",
+    "channelId": "chatdown"
+  },
+  {
+    "conversation": {
+      "id": "1"
+    },
+    "id": "7ba5142e-6cb2-4421-8e2c-e1ca6b25d9b1",
+    "recipient": {
+      "id": "af720226-98b1-3ef7-a462-f8c12e856ed6",
+      "name": "vishwac",
+      "role": "user"
+    },
+    "from": {
+      "id": "e666f12d-390d-34a1-9c70-661084284746",
       "name": "cafebot",
       "role": "bot"
     },
     "text": "Your table is booked. Reference number: #K89HG38SZ\n",
-    "timestamp": "2018-04-29T01:58:26.000Z",
+    "timestamp": "2018-05-04T18:01:59.000Z",
     "type": "message",
     "channelId": "chatdown"
   }
