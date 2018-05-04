@@ -5,14 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Assets\LU\**" />
+    <Content Remove="Assets\LU\**" />
+    <EmbeddedResource Remove="Assets\LU\**" />
+    <None Remove="Assets\LU\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
     <PackageReference Include="Microsoft.Bot.Builder.Core.Extensions" Version="4.0.0-preview" />
     <PackageReference Include="Microsoft.Bot.Builder.Dialogs" Version="4.0.0-preview" />
     <PackageReference Include="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.0.0-preview" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Assets\LU\models\QnAMaker\" />
   </ItemGroup>
 
 </Project>
