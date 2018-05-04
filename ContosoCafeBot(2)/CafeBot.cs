@@ -46,7 +46,7 @@ namespace ContosoCafeBot
                         // remember the user's name
                         userState.name = newUserName;
 
-                        //userState.sendCards = true;
+                        userState.sendCards = true;
 
                         await context.SendActivity("I can help you find contoso cafe locations, book a table and answer questions about Contoso cafe!");
 
