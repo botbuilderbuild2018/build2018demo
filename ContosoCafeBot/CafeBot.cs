@@ -25,6 +25,7 @@ namespace ContosoCafeBot
         }
         public async Task OnTurn(ITurnContext context)
         {
+            //TODO: is this the right way to handle cards?
             string utterance = context.Activity.Text;
             JObject cardData = (JObject)context.Activity.Value;
             if (cardData != null && cardData.Property("intent") != null) utterance = cardData["utterance"].ToString();
@@ -79,7 +80,7 @@ namespace ContosoCafeBot
                                 await context.SendActivity("You can say hi or book table or find locations");
                                 break;
                         }
-                    }
+                    } 
                     break;
             }
         }

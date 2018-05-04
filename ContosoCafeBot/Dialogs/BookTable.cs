@@ -20,6 +20,7 @@ namespace ContosoCafeBot.Dialogs
                     async (dc, args, next) =>
                     {
                         dc.ActiveDialog.State = new Dictionary<string, object>();
+                        // TODO: make this a choice prompt
                         await dc.Prompt("textPrompt", "Sure. I can help with that. What City?");
                     },
                     async (dc, args, next) =>
@@ -35,8 +36,7 @@ namespace ContosoCafeBot.Dialogs
                     },
                     async (dc, args, next) =>
                     {
-                        List<Microsoft.Bot.Builder.Prompts.DateTimeResult.DateTimeResolution> p1 = (List<Microsoft.Bot.Builder.Prompts.DateTimeResult.DateTimeResolution>)args["Resolution"];
-                        dc.ActiveDialog.State["time"] = p1[0].Value;
+                        dc.ActiveDialog.State["time"] = ((List<Microsoft.Bot.Builder.Prompts.DateTimeResult.DateTimeResolution>)args["Resolution"])[0].Value;
                         await dc.Prompt("PartySizePrompt", "How many guests?");
                     },
                     async (dc, args, next) =>
@@ -48,6 +48,7 @@ namespace ContosoCafeBot.Dialogs
                     async (dc, args, next) =>
                     {
                         var dialogState = dc.ActiveDialog.State;
+                        // TODO: evaluate outcome of confirm prompt, route to change dialog if user said no
                         await dc.Context.SendActivity($"I've booked your table for for {dialogState["partySize"]} in {dialogState["city"]} for {dialogState["date"]} at {dialogState["time"]}.");
                         await dc.End(dc.ActiveDialog.State);
                     }
