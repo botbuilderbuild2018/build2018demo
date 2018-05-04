@@ -6,7 +6,7 @@
 // </auto-generated>
 using Newtonsoft.Json;
 using System.Collections.Generic;
-namespace Luis
+namespace ContosoCafeBot
 {
     public class cafeLUISModel: Microsoft.Bot.Builder.Core.Extensions.IRecognizerConvert
     {
