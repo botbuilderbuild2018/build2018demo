@@ -78,30 +78,30 @@ namespace ContosoCafeBot
                                 await dc.Begin("WhoAreYou");
                                 break;
                             default:
-                                //var qEndpoint = new QnAMakerEndpoint()
-                                //{
+                                await context.SendActivity("Sorry, I do not understand.");
+                                await context.SendActivity("You can say hi or book table or find locations");
+
+                                // var qEndpoint = new QnAMakerEndpoint()
+                                // {
                                 //    Host = "https://contosocafeqnamaker.azurewebsites.net/qnamaker",
                                 //    EndpointKey = "09e2d55b-a44c-41b6-a08a-76a7df9ddffe",
                                 //    KnowledgeBaseId = "b5534d70-bded-45e1-998a-5945174d4ff3"
-                                //};
-                                //var qOptions = new QnAMakerOptions()
-                                //{
+                                // };
+                                // var qOptions = new QnAMakerOptions()
+                                // {
                                 //    ScoreThreshold = 0.4F,
                                 //    Top = 1
-                                //};
-                                //var qnamaker = new QnAMaker(qEndpoint, qOptions);
-                                //QueryResult[] qResult = await qnamaker.GetAnswers(context.Activity.Text);
-                                //if(qResult.Length == 0)
-                                //{
+                                // };
+                                // var qnamaker = new QnAMaker(qEndpoint, qOptions);
+                                // QueryResult[] qResult = await qnamaker.GetAnswers(context.Activity.Text);
+                                // if(qResult.Length == 0)
+                                // {
                                 //    await context.SendActivity("Sorry, I do not understand.");
                                 //    await context.SendActivity("You can say hi or book table or find locations");
-                                //} else
-                                //{
+                                // } else
+                                // {
                                 //    await context.SendActivity(qResult[0].Answer);
-                                //}
-
-                                await context.SendActivity("Sorry, I do not understand.");
-                                await context.SendActivity("You can say hi or book table or find locations");
+                                // }
                                 break;
                         }
                     } 

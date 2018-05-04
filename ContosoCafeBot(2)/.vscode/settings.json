@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.transcript" : "json",
+        "*.chat" : "markdown",
+        "*.lu" : "markdown"
+    },
+
+}
