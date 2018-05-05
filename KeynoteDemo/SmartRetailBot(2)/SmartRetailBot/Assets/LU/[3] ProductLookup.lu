@@ -9,10 +9,11 @@
 
 > ## entity definitions
 
+> All Product types as a list entity
+
 $productType : watch=
 - watch
 - wrist watch
 - watches
 - timex
-- rolex
 - swiss watch
