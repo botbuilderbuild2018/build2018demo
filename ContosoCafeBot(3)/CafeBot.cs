@@ -75,22 +75,22 @@ namespace ContosoCafeBot
                         
                         // top level dispatch
                         
-                        switch (utterance)
+                        switch (lResult.TopIntent().intent)
                         {
-                            //case cafeLUISModel.Intent.Greeting:
-                            case "hi":
+                            case cafeLUISModel.Intent.Greeting:
+                            //case "hi":
                                 await context.SendActivity("Hello, I'm the contoso cafe bot. How can I help you?");
                                 if (userState.sendCards) await context.SendActivity(CreateCardResponse(context.Activity, createWelcomeCardAttachment()));
                                 break;
-                            //case cafeLUISModel.Intent.Book_Table:
-                            case "book table":
+                            case cafeLUISModel.Intent.Book_Table:
+                            // case "book table":
                                 await dc.Begin("BookTable");
                                 break;
-                            //case cafeLUISModel.Intent.Who_are_you_intent:
-                            case "who are you?":
+                            case cafeLUISModel.Intent.Who_are_you_intent:
+                            // case "who are you?":
                                 await dc.Begin("WhoAreYou");
                                 break;
-                            //case cafeLUISModel.Intent.None:
+                            case cafeLUISModel.Intent.None:
                             default:
                                 var qEndpoint = new QnAMakerEndpoint()
                                 {

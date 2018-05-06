@@ -23,22 +23,22 @@ namespace ContosoCafeBot
         public class _Entities
         {
             // Simple entities
-            public string[] PartySize;
+            public string[] partySize;
 
             // Built-in entities
-            public Microsoft.Bot.Builder.Ai.LUIS.DateTimeSpec[] Builtin_datetime;
-            public double[] Builtin_number;
+            public Microsoft.Bot.Builder.Ai.LUIS.DateTimeSpec[] datetime;
+            public double[] number;
 
             // Lists
-            public string[][] CafeLocation;
+            public string[][] cafeLocation;
 
             // Instance
             public class _Instance
             {
-                public Microsoft.Bot.Builder.Ai.LUIS.InstanceData[] PartySize;
-                public Microsoft.Bot.Builder.Ai.LUIS.InstanceData[] Builtin_datetime;
-                public Microsoft.Bot.Builder.Ai.LUIS.InstanceData[] Builtin_number;
-                public Microsoft.Bot.Builder.Ai.LUIS.InstanceData[] CafeLocation;
+                public Microsoft.Bot.Builder.Ai.LUIS.InstanceData[] partySize;
+                public Microsoft.Bot.Builder.Ai.LUIS.InstanceData[] datetime;
+                public Microsoft.Bot.Builder.Ai.LUIS.InstanceData[] number;
+                public Microsoft.Bot.Builder.Ai.LUIS.InstanceData[] cafeLocation;
             }
             [JsonProperty("$instance")]
             public _Instance _instance;
@@ -56,6 +56,21 @@ namespace ContosoCafeBot
             Intents = app.Intents;
             Entities = app.Entities;
             Properties = app.Properties;
+        }
+
+        public (Intent intent, double score) TopIntent()
+        {
+            Intent maxIntent = Intent.None;
+            var max = 0.0;
+            foreach (var entry in Intents)
+            {
+                if (entry.Value.Score > max)
+                {
+                    maxIntent = entry.Key;
+                    max = entry.Value.Score;
+                }
+            }
+            return (maxIntent, max);
         }
     }
 }
