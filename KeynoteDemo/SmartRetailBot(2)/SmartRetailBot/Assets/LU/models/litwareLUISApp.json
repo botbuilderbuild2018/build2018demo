@@ -11,16 +11,15 @@
   "composites": [],
   "closedLists": [
     {
-      "name": "productType",
+      "name": "productType ",
       "subLists": [
         {
-          "canonicalForm": "watch",
+          "canonicalForm": " watch",
           "list": [
             "watch",
             "wrist watch",
             "watches",
             "timex",
-            "rolex",
             "swiss watch"
           ]
         }
