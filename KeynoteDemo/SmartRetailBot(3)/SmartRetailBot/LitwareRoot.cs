@@ -17,7 +17,6 @@ namespace SmartRetailBot
             switch (context.Activity.Type)
             {
                 case ActivityTypes.Message:
-
                     var luisResult = context.Services.Get<RecognizerResult>(LuisRecognizerMiddleware.LuisRecognizerResultKey);
                     if (luisResult != null)
                     {
