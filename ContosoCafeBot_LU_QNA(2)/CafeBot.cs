@@ -26,7 +26,6 @@ namespace ContosoCafeBot
                     }
                     break;
                 case ActivityTypes.Message:
-                    
                     await context.SendActivity("Hello, I'm the contoso cafe bot. How can I help you?");
                     //await getQnAResult(context);
                     break;
