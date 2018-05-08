@@ -26,7 +26,7 @@ namespace ContosoCafeBot
                     {
                         await context.SendActivity($"Hello {newUserName}! I'm the Cafe bot!");
                         await context.SendActivity("I can help you find contoso cafe locations, book a table and answer questions!");
-                        await context.SendActivity(CreateCardResponse(context.Activity, createWelcomeCardAttachment()));
+                        // await context.SendActivity(CreateCardResponse(context.Activity, createWelcomeCardAttachment()));
                     }
                     break;
                 case ActivityTypes.Message:
