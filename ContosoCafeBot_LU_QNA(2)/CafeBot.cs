@@ -26,7 +26,7 @@ namespace ContosoCafeBot
                     }
                     break;
                 case ActivityTypes.Message:
-                    await context.SendActivity("Hello, I'm the contoso cafe bot. How can I help you?");
+                    //await context.SendActivity("Hello, I'm the contoso cafe bot. How can I help you?");
                     await getQnAResult(context);
                     break;
             }
@@ -36,9 +36,9 @@ namespace ContosoCafeBot
         private async Task getQnAResult(ITurnContext context) {
             var qEndpoint = new QnAMakerEndpoint()
             {
-                Host = "https://contosocafeqnamaker.azurewebsites.net/qnamaker",
-                EndpointKey = "09e2d55b-a44c-41b6-a08a-76a7df9ddffe",
-                KnowledgeBaseId = "b5534d70-bded-45e1-998a-5945174d4ff3"
+                Host = "https://contosocafeqnab8.azurewebsites.net/qnamaker",
+                EndpointKey = "0fa7f711-6a82-4155-9cf9-5c8168967df6",
+                KnowledgeBaseId = "dfa449da-1fb7-449e-b753-53af1b1f7b5b"
             };
             var qOptions = new QnAMakerOptions()
             {
