@@ -72,9 +72,11 @@ namespace ContosoCafeBot
                                 if (userState.sendCards) await context.SendActivity(CreateCardResponse(context.Activity, createWelcomeCardAttachment()));
                                 break;
                             case "book table":
+                                // await context.SendActivity("I'm still learning to book a table!");
                                 await dc.Begin("BookTable");
                                 break;
                             case "who are you?":
+                                // await context.SendActivity("I'm the cafe bot!");
                                 await dc.Begin("WhoAreYou");
                                 break;
                             default:
