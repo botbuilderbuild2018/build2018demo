@@ -16,14 +16,14 @@ namespace ContosoCafeBot
         {
             switch (context.Activity.Type)
             {
-                case ActivityTypes.ConversationUpdate:
-                    var newUserName = context.Activity.MembersAdded[0].Name;
-                    if (!string.IsNullOrWhiteSpace(newUserName) && newUserName != "Bot")
-                    {
-                        await context.SendActivity($"Hello {newUserName}! I'm the Cafe bot!");
-                        await context.SendActivity("I can help you find contoso cafe locations, book a table and answer questions about Contoso cafe!");
-                    }
-                    break;
+                // case ActivityTypes.ConversationUpdate:
+                //     var newUserName = context.Activity.MembersAdded[0].Name;
+                //     if (!string.IsNullOrWhiteSpace(newUserName) && newUserName != "Bot")
+                //     {
+                //         await context.SendActivity($"Hello {newUserName}! I'm the Cafe bot!");
+                //         await context.SendActivity("I can help you find contoso cafe locations, book a table and answer questions!");
+                //     }
+                //     break;
                 case ActivityTypes.Message:
                     
                     await context.SendActivity("Hello, I'm the contoso cafe bot. How can I help you?");
