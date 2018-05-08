@@ -78,37 +78,38 @@ namespace ContosoCafeBot
                                 await dc.Begin("WhoAreYou");
                                 break;
                             default:
-                                await context.SendActivity("Sorry, I do not understand.");
-                                await context.SendActivity("You can say hi or book table or find locations");
-
-                                // var qEndpoint = new QnAMakerEndpoint()
-                                // {
-                                //    Host = "https://contosocafeqnamaker.azurewebsites.net/qnamaker",
-                                //    EndpointKey = "09e2d55b-a44c-41b6-a08a-76a7df9ddffe",
-                                //    KnowledgeBaseId = "b5534d70-bded-45e1-998a-5945174d4ff3"
-                                // };
-                                // var qOptions = new QnAMakerOptions()
-                                // {
-                                //    ScoreThreshold = 0.4F,
-                                //    Top = 1
-                                // };
-                                // var qnamaker = new QnAMaker(qEndpoint, qOptions);
-                                // QueryResult[] qResult = await qnamaker.GetAnswers(context.Activity.Text);
-                                // if(qResult.Length == 0)
-                                // {
-                                //    await context.SendActivity("Sorry, I do not understand.");
-                                //    await context.SendActivity("You can say hi or book table or find locations");
-                                // } else
-                                // {
-                                //    await context.SendActivity(qResult[0].Answer);
-                                // }
+                                await getQnAResult(context);
                                 break;
                         }
                     } 
                     break;
             }
         }
-        
+        private async Task getQnAResult(ITurnContext context)
+        {
+            var qEndpoint = new QnAMakerEndpoint()
+            {
+                Host = "https://contosocafeqnab8.azurewebsites.net/qnamaker",
+                EndpointKey = "0fa7f711-6a82-4155-9cf9-5c8168967df6",
+                KnowledgeBaseId = "dfa449da-1fb7-449e-b753-53af1b1f7b5b"
+            };
+            var qOptions = new QnAMakerOptions()
+            {
+                ScoreThreshold = 0.4F,
+                Top = 1
+            };
+            var qnamaker = new QnAMaker(qEndpoint, qOptions);
+            QueryResult[] qResult = await qnamaker.GetAnswers(context.Activity.Text);
+            if (qResult.Length == 0)
+            {
+                await context.SendActivity("Sorry, I do not understand.");
+                await context.SendActivity("You can say hi or book table or find locations");
+            }
+            else
+            {
+                await context.SendActivity(qResult[0].Answer);
+            }
+        }
         private Activity CreateCardResponse(Activity activity, Attachment attachment)
         {
             var response = activity.CreateReply();
