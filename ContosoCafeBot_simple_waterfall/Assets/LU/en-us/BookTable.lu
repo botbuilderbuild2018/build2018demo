@@ -1,0 +1,36 @@
+﻿
+> Defining intents and entities for book a table task
+
+## Book Table
+- book a table
+- can you get me a table
+- book a table for 2 in seattle
+- can you get me a table for tomorrow? 
+
+> label partySize here. Although the number will get automatically recognized, we need this label this.
+> this will help the ML model can understand the semantics of this specific number to be partySize
+
+- please get me a table for {partySize=3}
+- book a table for {partySize=2} in seattle for 3pm
+- reserve a table at 5pm
+- table for {partySize=5} guests
+
+$PREBUILT:datetimeV2
+
+$PREBUILT:number
+
+$cafeLocation:seattle=
+- seattle
+- seatac
+- SEA
+- seattle tacoma
+- space needle
+
+$cafeLocation:redmond=
+- microsoft
+- east side
+- redmond
+- bellevue
+
+$cafeLocation:portland=
+- portland
