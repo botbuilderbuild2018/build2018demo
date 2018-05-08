@@ -1,0 +1,102 @@
+[
+  {
+    "conversation": {
+      "id": "1"
+    },
+    "id": "00601040-ba08-406a-8e86-97a9d9886dd3",
+    "recipient": {
+      "id": "a7476523-1502-3509-94ed-d35623300ade",
+      "name": "cafebot",
+      "role": "bot"
+    },
+    "from": {
+      "id": "6875bd95-67f1-3b54-b7a5-cb0e88ec6fc7",
+      "name": "vishwac",
+      "role": "user"
+    },
+    "text": "Who are you?",
+    "timestamp": "2018-05-08T18:49:16.000Z",
+    "type": "message",
+    "channelId": "chatdown"
+  },
+  {
+    "conversation": {
+      "id": "1"
+    },
+    "id": "00901800-4967-4335-b2f4-27dc6779e4d9",
+    "recipient": {
+      "id": "6875bd95-67f1-3b54-b7a5-cb0e88ec6fc7",
+      "name": "vishwac",
+      "role": "user"
+    },
+    "from": {
+      "id": "a7476523-1502-3509-94ed-d35623300ade",
+      "name": "cafebot",
+      "role": "bot"
+    },
+    "text": "Hi, I'm the Contoso Cafe bot. What's your name?",
+    "timestamp": "2018-05-08T18:49:18.000Z",
+    "type": "message",
+    "channelId": "chatdown"
+  },
+  {
+    "conversation": {
+      "id": "1"
+    },
+    "id": "893f069e-2e77-4629-a0b7-cb0bd13e84c0",
+    "recipient": {
+      "id": "a7476523-1502-3509-94ed-d35623300ade",
+      "name": "cafebot",
+      "role": "bot"
+    },
+    "from": {
+      "id": "6875bd95-67f1-3b54-b7a5-cb0e88ec6fc7",
+      "name": "vishwac",
+      "role": "user"
+    },
+    "text": "I'm vishwac",
+    "timestamp": "2018-05-08T18:49:20.000Z",
+    "type": "message",
+    "channelId": "chatdown"
+  },
+  {
+    "conversation": {
+      "id": "1"
+    },
+    "id": "1997e5df-01dc-4631-a9c1-b7b88927cd31",
+    "recipient": {
+      "id": "6875bd95-67f1-3b54-b7a5-cb0e88ec6fc7",
+      "name": "vishwac",
+      "role": "user"
+    },
+    "from": {
+      "id": "a7476523-1502-3509-94ed-d35623300ade",
+      "name": "cafebot",
+      "role": "bot"
+    },
+    "text": "",
+    "timestamp": "2018-05-08T18:49:24.000Z",
+    "type": "typing",
+    "channelId": "chatdown"
+  },
+  {
+    "conversation": {
+      "id": "1"
+    },
+    "id": "cc46fc79-1748-49ed-9657-b6c5d60e12dc",
+    "recipient": {
+      "id": "6875bd95-67f1-3b54-b7a5-cb0e88ec6fc7",
+      "name": "vishwac",
+      "role": "user"
+    },
+    "from": {
+      "id": "a7476523-1502-3509-94ed-d35623300ade",
+      "name": "cafebot",
+      "role": "bot"
+    },
+    "text": "Hello Vishwac. Nice to meet you!\n",
+    "timestamp": "2018-05-08T18:49:27.000Z",
+    "type": "message",
+    "channelId": "chatdown"
+  }
+]

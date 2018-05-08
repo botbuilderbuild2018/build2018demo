@@ -1,0 +1,40 @@
+{
+	"$schema": "https://microsoft.github.io/AdaptiveCards/schemas/adaptive-card.json",
+	"type": "AdaptiveCard",
+	"version": "1.0",
+	"body": [
+		{
+			"type": "TextBlock",
+			"text": "Seattle Contoso Cafe",
+			"size": "large",
+			"weight": "bolder"
+        },
+        {
+          "type": "Column",
+          "size": "1",
+          "items": [
+            {
+              "type": "Image",
+              "url": "https://cdn.pixabay.com/photo/2015/06/05/10/35/coffee-798315_640.png",
+              "size": "auto"
+            }
+          ]
+        },
+		{
+			"type": "TextBlock",
+			"text": "1 pike place, Seattle, WA",
+			"wrap": true
+		},
+		{
+			"type": "TextBlock",
+			"text": "Hours: M-F 9AM-11PM"
+		}
+	],
+	"actions": [
+		{
+			"type": "Action.OpenUrl",
+			"url": "http://foo.com",
+			"title": "View Store"
+		}
+	]
+}
