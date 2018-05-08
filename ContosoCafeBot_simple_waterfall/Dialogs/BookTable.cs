@@ -46,6 +46,7 @@ namespace ContosoCafeBot.Dialogs
                     async (dc, args, next) =>
                     {
                         var dialogState = dc.ActiveDialog.State;
+                        // TODO: Book table
                         await dc.Context.SendActivity($"I've booked your table for for {dialogState["partySize"]} in {dialogState["city"]} for {dialogState["date"]} at {dialogState["time"]}.");
                         await dc.End(dc.ActiveDialog.State);
                     }
