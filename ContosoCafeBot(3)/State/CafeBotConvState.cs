@@ -7,8 +7,20 @@
     /// </summary>
     public class CafeBotConvState : Dictionary<string, object>
     {
-        public Dictionary<string, string> convContextKVPair;
-        
+        public Dictionary<string, object> convContextKVPair;
+        private struct bookTableEntities
+        {
+            string cafeLocation;
+            string dateTime;
+            int partySize;
+        }
+
+        private struct whoAreYouEntities
+        {
+            string userName;
+        }
     }
+
+    
     
 }
