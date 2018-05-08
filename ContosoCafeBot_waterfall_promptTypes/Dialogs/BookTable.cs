@@ -1,11 +1,14 @@
-﻿using Microsoft.Bot.Builder.Dialogs;
-//using Microsoft.Bot.Builder.Prompts;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.Recognizers.Text;
 using Newtonsoft.Json.Linq;
+using Microsoft.Bot.Builder;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+using Microsoft.Recognizers.Text;
+using Microsoft.Bot.Builder.Dialogs;
+using Microsoft.Bot.Builder.Prompts;
+using Microsoft.Bot.Builder.Prompts.Choices;
+using Microsoft.Recognizers.Text.DataTypes.TimexExpression;
 
 namespace ContosoCafeBot.Dialogs
 {
@@ -14,45 +17,95 @@ namespace ContosoCafeBot.Dialogs
         public BookTable()
             : base("BookTable")
         {
+
+            var promptOptions = new ChoicePromptOptions
+            {
+                Choices = new List<Choice>
+                {
+                    new Choice { Value = "Seattle" },
+                    new Choice { Value = "Bellevue" },
+                    new Choice { Value = "Renton" },
+                }
+            };
+
+            Dialogs.Add("textPrompt", new Microsoft.Bot.Builder.Dialogs.TextPrompt());
+            Dialogs.Add("choicePrompt", new Microsoft.Bot.Builder.Dialogs.ChoicePrompt(Culture.English) { Style = ListStyle.Inline });
+            Dialogs.Add("numberPrompt", new Microsoft.Bot.Builder.Dialogs.NumberPrompt<int>(Culture.English));
+            Dialogs.Add("timexPrompt", new TimexPrompt(Culture.English, TimexValidator));
+            Dialogs.Add("confirmationPrompt", new Microsoft.Bot.Builder.Dialogs.ConfirmPrompt(Culture.English));
+
             Dialogs.Add("BookTable",
                 new WaterfallStep[]
                 {
                     async (dc, args, next) =>
                     {
                         dc.ActiveDialog.State = new Dictionary<string, object>();
-                        await dc.Prompt("textPrompt", "Sure. I can help with that. What City?");
+                        // await dc.Prompt("textPrompt", "Sure. I can help with that. What City?");
+                        await dc.Prompt("choicePrompt", "Which of our locations would you like?", promptOptions);
                     },
                     async (dc, args, next) =>
                     {
-                        dc.ActiveDialog.State["city"] = args["Value"];
-                        await dc.Prompt("textPrompt", "Ok. Did you have a date in mind?");
+                        var choiceResult = (FoundChoice)args["Value"];
+                        dc.ActiveDialog.State["bookingLocation"] = choiceResult.Value;
+                        await dc.Prompt("timexPrompt", "When would you like to arrive? (We open at 4PM.)",
+                            new PromptOptions { RetryPromptString = "Please pick a date in the future and a time in the evening." });
                     },
                     async (dc, args, next) =>
                     {
-                        dc.ActiveDialog.State["date"] = args["Value"];
-                        await dc.Prompt("textPrompt", "What time?");
+                        var timexResult = (TimexResult)args;
+                        var timexResolution = timexResult.Resolutions.First();
+                        var timexProperty = new TimexProperty(timexResolution.ToString());
+                        var bookingDateTime = $"{timexProperty.ToNaturalLanguage(DateTime.Now)}";
+                        dc.ActiveDialog.State["bookingDateTime"] = bookingDateTime;
+
+                        await dc.Prompt("numberPrompt", "How many in your party?");
                     },
                     async (dc, args, next) =>
                     {
-                        dc.ActiveDialog.State["time"] = args["Value"];
-                        await dc.Prompt("textPrompt", "How many guests?");
-                    },
-                    async (dc, args, next) =>
-                    {
-                        dc.ActiveDialog.State["partySize"] = args["Value"];
+                        dc.ActiveDialog.State["bookingGuestCount"] = args["Value"];
                         var dialogState = dc.ActiveDialog.State;
-                        await dc.Prompt("textPrompt", $"Should I go ahead and book a table for {dialogState["partySize"]} in {dialogState["city"]} for {dialogState["date"]} at {dialogState["time"]}?");
+
+                        await dc.Prompt("confirmationPrompt", $"Thanks, Should I go ahead and book a table for {dialogState["bookingGuestCount"].ToString()} guests at our {dialogState["bookingLocation"].ToString()} location for {dialogState["bookingDateTime"].ToString()} ?");
                     },
                     async (dc, args, next) =>
                     {
                         var dialogState = dc.ActiveDialog.State;
-                        // TODO: Book table
-                        await dc.Context.SendActivity($"I've booked your table for for {dialogState["partySize"]} in {dialogState["city"]} for {dialogState["date"]} at {dialogState["time"]}.");
-                        await dc.End(dc.ActiveDialog.State);
+
+                        // TODO: Verify user said yes to confirmation prompt
+
+                        // TODO: book the table! 
+
+                        await dc.Context.SendActivity($"Thanks, I have {dialogState["bookingGuestCount"].ToString()} guests booked for our {dialogState["bookingLocation"].ToString()} location for {dialogState["bookingDateTime"].ToString()}.");
                     }
                 }
             );
-            Dialogs.Add("textPrompt", new TextPrompt());
+        }
+        // The notion of a Validator is a standard pattern across all the Prompts
+        private static Task TimexValidator(ITurnContext context, TimexResult value)
+        {
+            var cadidates = value.Resolutions;
+
+            var constraints = new[] {
+                TimexCreator.ThisWeek(),                /* Take any entries for this week, no entries from past please */
+                TimexCreator.NextWeek(),                /* Take any entries for next week, no dates from the past please */
+                TimexCreator.Evening,                   /* Evenings only */
+                
+            };
+
+            var resolutions = TimexRangeResolver.Evaluate(cadidates, constraints);
+
+            if (resolutions.Count == 0)
+            {
+                value.Resolutions = new string[] { };
+                value.Status = PromptStatus.OutOfRange;
+            }
+            else
+            {
+                value.Resolutions = new[] { resolutions.First().TimexValue };
+                value.Status = PromptStatus.Recognized;
+            }
+
+            return Task.CompletedTask;
         }
     }
 }
