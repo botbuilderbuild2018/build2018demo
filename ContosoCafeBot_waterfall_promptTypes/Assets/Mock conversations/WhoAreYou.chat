@@ -1,0 +1,10 @@
+﻿user=vishwac
+bot=cafebot
+
+user: Who are you?
+bot: Hi, I'm the Contoso Cafe bot. What's your name?
+user: I'm vishwac
+bot: [Typing]
+[Delay=3000]
+Hello Vishwac. Nice to meet you!
+Hi, I'm LimeBot and I'm here to make you feel good and live with purpose. Ask me questions like **\"suggest an activity\"** or **\"help me schedule an activity\"** and I'll reply with recommends tailored just for you

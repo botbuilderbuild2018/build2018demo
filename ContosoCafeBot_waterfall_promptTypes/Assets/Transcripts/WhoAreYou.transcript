@@ -1,0 +1,82 @@
+[
+  {
+    "conversation": {
+      "id": "1"
+    },
+    "id": "f366bde1-edd8-488f-9432-c90091e541c3",
+    "recipient": {
+      "id": "d9fd9e13-3559-34e3-99c4-e3a4c46bc483",
+      "name": "cafebot",
+      "role": "bot"
+    },
+    "from": {
+      "id": "9021498b-bdac-3501-9dad-64ce9769a3f7",
+      "name": "vishwac",
+      "role": "user"
+    },
+    "text": "Who are you?",
+    "timestamp": "2018-04-29T02:57:44.000Z",
+    "type": "message",
+    "channelId": "chatdown"
+  },
+  {
+    "conversation": {
+      "id": "1"
+    },
+    "id": "f39807c8-53f6-46f7-9274-995cbf988c60",
+    "recipient": {
+      "id": "9021498b-bdac-3501-9dad-64ce9769a3f7",
+      "name": "vishwac",
+      "role": "user"
+    },
+    "from": {
+      "id": "d9fd9e13-3559-34e3-99c4-e3a4c46bc483",
+      "name": "cafebot",
+      "role": "bot"
+    },
+    "text": "Hi, I'm the Contoso Cafe bot. What's your name?",
+    "timestamp": "2018-04-29T02:57:46.000Z",
+    "type": "message",
+    "channelId": "chatdown"
+  },
+  {
+    "conversation": {
+      "id": "1"
+    },
+    "id": "28b70327-89d4-47dd-b8cc-92cfd8551fb1",
+    "recipient": {
+      "id": "d9fd9e13-3559-34e3-99c4-e3a4c46bc483",
+      "name": "cafebot",
+      "role": "bot"
+    },
+    "from": {
+      "id": "9021498b-bdac-3501-9dad-64ce9769a3f7",
+      "name": "vishwac",
+      "role": "user"
+    },
+    "text": "I'm vishwac",
+    "timestamp": "2018-04-29T02:57:48.000Z",
+    "type": "message",
+    "channelId": "chatdown"
+  },
+  {
+    "conversation": {
+      "id": "1"
+    },
+    "id": "c5cfa084-24f9-4d70-8b7c-6b533332d3da",
+    "recipient": {
+      "id": "9021498b-bdac-3501-9dad-64ce9769a3f7",
+      "name": "vishwac",
+      "role": "user"
+    },
+    "from": {
+      "id": "d9fd9e13-3559-34e3-99c4-e3a4c46bc483",
+      "name": "cafebot",
+      "role": "bot"
+    },
+    "text": "Hello Vishwac. Nice to meet you!\nHi, I'm LimeBot and I'm here to make you feel good and live with purpose. Ask me questions like **\\\"suggest an activity\\\"** or **\\\"help me schedule an activity\\\"** and I'll reply with recommends tailored just for you\n",
+    "timestamp": "2018-04-29T02:57:53.000Z",
+    "type": "message",
+    "channelId": "chatdown"
+  }
+]
