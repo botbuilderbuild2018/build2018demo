@@ -57,7 +57,7 @@ namespace ContosoCafeBot
                 case ActivityTypes.Message:
                     
                     // create dialogContext
-                    var dc = _dialogs.CreateContext(context, conversationState);
+                    DialogContext dc = _dialogs.CreateContext(context, conversationState);
                     if(utterance == "start over") {
                             //restart the conversation
                             await context.SendActivity("Sure.. Let's start over");      

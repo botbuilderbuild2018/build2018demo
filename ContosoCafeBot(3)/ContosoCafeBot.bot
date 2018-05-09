@@ -12,22 +12,6 @@
             "type": "endpoint"
         },
         {
-            "type": "abs",
-            "name": "contosocafebotbuild2018",
-            "id": "contosocafebotbuild2018",
-            "tenantId": "44bd8c0c-5de3-47e3-a011-d125c70aab59",
-            "subscriptionId": "087822e7-ec21-4d3b-8ad4-92da1098178c",
-            "resourceGroup": "build2018"
-        },
-        {
-            "appId": "54aa0cbf-8e10-4448-ae88-a57791e3a35a",
-            "id": "https://contosocafebotbuild2018.azurewebsites.net/api/messages",
-            "type": "endpoint",
-            "appPassword": "N-}4/(QrDMRe#i0q",
-            "endpoint": "https://contosocafebotbuild2018.azurewebsites.net/api/messages",
-            "name": "contosocafebotbuild2018 (2)"
-        },
-        {
             "id": "edaadd9b-b632-4733-a25c-5b67271035dd",
             "type": "luis",
             "name": "contosocafeluis",
@@ -37,13 +21,13 @@
             "subscriptionKey": "be30825b782843dcbbe520ac5338f567"
         },
         {
-            "kbId": "b5534d70-bded-45e1-998a-5945174d4ff3",
-            "name": "contosocafeqna",
-            "type": "qna",
-            "subscriptionKey": "028428aec74d4380b13a24b09d0968b2",
-            "id": "b5534d70-bded-45e1-998a-5945174d4ff3",
-            "endpointKey": "09e2d55b-a44c-41b6-a08a-76a7df9ddffe",
-            "hostname": "https://contosocafeqnamaker.azurewebsites.net/qnamaker"
+          "kbId": "dfa449da-1fb7-449e-b753-53af1b1f7b5b",
+          "name": "cafeQnAModel",
+          "type": "qna",
+          "subscriptionKey": "d30ebbcc44ef4f07bae1a0e31b69f709",
+          "id": "dfa449da-1fb7-449e-b753-53af1b1f7b5b",
+          "endpointKey": "0fa7f711-6a82-4155-9cf9-5c8168967df6",
+          "hostname": "https://contosocafeqnab8.azurewebsites.net"
         }
     ]
 }

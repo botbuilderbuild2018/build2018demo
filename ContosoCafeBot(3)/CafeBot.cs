@@ -59,8 +59,14 @@ namespace ContosoCafeBot
 
                     // create dialogContext
                     DialogContext dc = _dialogs.CreateContext(context, conversationState);
-                    // continue with any active dialogs
-                    await dc.Continue();
+                    if(utterance == "start over") {
+                            //restart the conversation
+                            await context.SendActivity("Sure.. Let's start over");      
+                            dc.EndAll();  
+                    } else {
+                        // continue with any active dialogs
+                        await dc.Continue();
+                    }
 
                     if(!context.Responded)
                     {
@@ -79,19 +85,14 @@ namespace ContosoCafeBot
                                 break;
 
                             case cafeLUISModel.Intent.Book_Table:
-                                // case "book table":
-                                var location = lResult.Entities.cafeLocation;
-                                var dateTime = lResult.Entities.datetime;
-                                var partySize = lResult.Entities.partySize;
-                                var number = lResult.Entities.number;
-
-                                
-                                
-                                await dc.Begin("BookTable", conversationState);
+                            // case "book table":
+                                // await context.SendActivity("I'm still learning to book a table!");
+                                await dc.Begin("BookTable");
                                 break;
 
                             case cafeLUISModel.Intent.Who_are_you_intent:
                             // case "who are you?":
+                                // await context.SendActivity("I'm the cafe bot!");
                                 await dc.Begin("WhoAreYou");
                                 break;
 
@@ -117,9 +118,9 @@ namespace ContosoCafeBot
         private async Task getQnAResult(ITurnContext context) {
             var qEndpoint = new QnAMakerEndpoint()
             {
-                Host = "https://contosocafeqnamaker.azurewebsites.net/qnamaker",
-                EndpointKey = "09e2d55b-a44c-41b6-a08a-76a7df9ddffe",
-                KnowledgeBaseId = "b5534d70-bded-45e1-998a-5945174d4ff3"
+                Host = "https://contosocafeqnab8.azurewebsites.net/qnamaker",
+                EndpointKey = "0fa7f711-6a82-4155-9cf9-5c8168967df6",
+                KnowledgeBaseId = "dfa449da-1fb7-449e-b753-53af1b1f7b5b"
             };
             var qOptions = new QnAMakerOptions()
             {
