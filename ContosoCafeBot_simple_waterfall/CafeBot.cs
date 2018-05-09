@@ -78,10 +78,12 @@ namespace ContosoCafeBot
                                 break;
                             case "book table":
                                 // await context.SendActivity("I'm still learning to book a table!");
+                                // start waterfall dialog for table booking
                                 await dc.Begin("BookTable");
                                 break;
                             case "who are you?":
                                 // await context.SendActivity("I'm the cafe bot!");
+                                // start waterfall dialog for who are you? 
                                 await dc.Begin("WhoAreYou");
                                 break;
                             default:
