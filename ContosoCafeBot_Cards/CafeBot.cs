@@ -16,8 +16,8 @@ namespace ContosoCafeBot
         public async Task OnTurn(ITurnContext context)
         {
             string utterance = context.Activity.Text;
-            // JObject cardData = (JObject)context.Activity.Value;
-            // if (cardData != null && cardData.Property("utterance") != null) utterance = cardData["utterance"].ToString();
+            JObject cardData = (JObject)context.Activity.Value;
+            if (cardData != null && cardData.Property("utterance") != null) utterance = cardData["utterance"].ToString();
             switch (context.Activity.Type)
             {
                 case ActivityTypes.ConversationUpdate:

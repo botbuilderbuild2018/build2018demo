@@ -26,7 +26,7 @@ namespace ContosoCafeBot.Dialogs
                     async (dc, args, next) =>
                     {
                         await dc.Context.SendActivity($"Hello {args["Value"]}! Nice to meet you.");
-                        // TODO: Set this in user state
+                        // TODO: Remember this in user state
                         await dc.End(dc.ActiveDialog.State);
                     }
                 }

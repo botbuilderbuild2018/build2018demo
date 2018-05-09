@@ -47,8 +47,8 @@ namespace ContosoCafeBot.Dialogs
                     {
                         var choiceResult = (FoundChoice)args["Value"];
                         dc.ActiveDialog.State["bookingLocation"] = choiceResult.Value;
-                        await dc.Prompt("timexPrompt", "When would you like to arrive? (We open at 4PM.)",
-                            new PromptOptions { RetryPromptString = "Please pick a date in the future and a time in the evening." });
+                        await dc.Prompt("timexPrompt", $"Ok. I have {dc.ActiveDialog.State["bookingLocation"]} When would you like to arrive? (We open at 4PM.)",
+                            new PromptOptions { RetryPromptString = "Sorry, we only accept reservations for the next two weeks, 4PM-8PM" });
                     },
                     async (dc, args, next) =>
                     {
@@ -58,7 +58,7 @@ namespace ContosoCafeBot.Dialogs
                         var bookingDateTime = $"{timexProperty.ToNaturalLanguage(DateTime.Now)}";
                         dc.ActiveDialog.State["bookingDateTime"] = bookingDateTime;
 
-                        await dc.Prompt("numberPrompt", "How many in your party?");
+                        await dc.Prompt("numberPrompt", $"Ok. I have {dc.ActiveDialog.State["bookingDateTime"]}. How many in your party?");
                     },
                     async (dc, args, next) =>
                     {
