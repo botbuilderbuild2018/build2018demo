@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using Microsoft.Recognizers.Text;
 using Microsoft.Bot.Builder.Dialogs;
-using Microsoft.Bot.Builder.Prompts;
 using Microsoft.Bot.Builder.Prompts.Choices;
 using Microsoft.Recognizers.Text.DataTypes.TimexExpression;
 
@@ -28,11 +27,12 @@ namespace ContosoCafeBot.Dialogs
                 }
             };
 
-            Dialogs.Add("textPrompt", new Microsoft.Bot.Builder.Dialogs.TextPrompt());
-            Dialogs.Add("choicePrompt", new Microsoft.Bot.Builder.Dialogs.ChoicePrompt(Culture.English) { Style = ListStyle.Inline });
-            Dialogs.Add("numberPrompt", new Microsoft.Bot.Builder.Dialogs.NumberPrompt<int>(Culture.English));
+            //Dialogs.Add("textPrompt", new TextPrompt());
+
+            Dialogs.Add("choicePrompt", new ChoicePrompt(Culture.English) { Style = Microsoft.Bot.Builder.Prompts.ListStyle.Auto });
+            Dialogs.Add("numberPrompt", new NumberPrompt<int>(Culture.English));
             Dialogs.Add("timexPrompt", new TimexPrompt(Culture.English, TimexValidator));
-            Dialogs.Add("confirmationPrompt", new Microsoft.Bot.Builder.Dialogs.ConfirmPrompt(Culture.English));
+            Dialogs.Add("confirmationPrompt", new ConfirmPrompt(Culture.English));
 
             Dialogs.Add("BookTable",
                 new WaterfallStep[]
@@ -97,12 +97,12 @@ namespace ContosoCafeBot.Dialogs
             if (resolutions.Count == 0)
             {
                 value.Resolutions = new string[] { };
-                value.Status = PromptStatus.OutOfRange;
+                value.Status = Microsoft.Bot.Builder.Prompts.PromptStatus.OutOfRange;
             }
             else
             {
                 value.Resolutions = new[] { resolutions.First().TimexValue };
-                value.Status = PromptStatus.Recognized;
+                value.Status = Microsoft.Bot.Builder.Prompts.PromptStatus.Recognized;
             }
 
             return Task.CompletedTask;

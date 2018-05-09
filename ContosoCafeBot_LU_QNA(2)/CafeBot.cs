@@ -26,6 +26,10 @@ namespace ContosoCafeBot
                     }
                     break;
                 case ActivityTypes.Message:
+                    if(context.Activity.Text == "start over") {
+                            //restart the conversation
+                            await context.SendActivity("Sure.. Let's start over");        
+                    }
                     await context.SendActivity("Hello, I'm the contoso cafe bot. How can I help you?");
                     //  await getQnAResult(context);
                     break;

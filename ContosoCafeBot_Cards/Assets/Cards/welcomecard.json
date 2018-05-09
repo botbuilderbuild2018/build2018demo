@@ -41,7 +41,6 @@
       "type": "Action.Submit",
       "title": "Book a table",
       "data": {
-        "intent": "bookTable",
         "utterance": "book table"
       }
     },
@@ -49,7 +48,6 @@
       "type": "Action.Submit",
       "title": "Who are you?",
       "data": {
-        "intent": "whoAreYou",
         "utterance": "who are you?"
       }
     }

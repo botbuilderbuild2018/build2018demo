@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Bot.Schema;
 
 namespace ContosoCafeBot.Dialogs
 {
@@ -12,6 +13,8 @@ namespace ContosoCafeBot.Dialogs
         public WhoAreYou()
             : base("WhoAreYou")
         {
+            Dialogs.Add("textPrompt", new TextPrompt());
+
             Dialogs.Add("WhoAreYou",
                 new WaterfallStep[]
                 {
@@ -22,15 +25,13 @@ namespace ContosoCafeBot.Dialogs
                     },
                     async (dc, args, next) =>
                     {
-                        dc.ActiveDialog.State["name"] = args["Value"];
                         await dc.Context.SendActivity($"Hello {args["Value"]}! Nice to meet you.");
                         // TODO: Set this in user state
                         await dc.End(dc.ActiveDialog.State);
                     }
                 }
             );
-            
-            Dialogs.Add("textPrompt", new TextPrompt());
+
         }
     }
 }

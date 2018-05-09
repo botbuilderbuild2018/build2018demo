@@ -14,6 +14,8 @@ namespace ContosoCafeBot.Dialogs
         public BookTable()
             : base("BookTable")
         {
+            Dialogs.Add("textPrompt", new TextPrompt());
+            
             Dialogs.Add("BookTable",
                 new WaterfallStep[]
                 {
@@ -52,7 +54,7 @@ namespace ContosoCafeBot.Dialogs
                     }
                 }
             );
-            Dialogs.Add("textPrompt", new TextPrompt());
+            
         }
     }
 }

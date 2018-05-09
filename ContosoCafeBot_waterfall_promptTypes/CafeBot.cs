@@ -58,12 +58,16 @@ namespace ContosoCafeBot
                     
                     // create dialogContext
                     var dc = _dialogs.CreateContext(context, conversationState);
-                    // continue with any active dialogs
-                    await dc.Continue();
-
+                    if(utterance == "start over") {
+                            //restart the conversation
+                            await context.SendActivity("Sure.. Let's start over");      
+                            dc.EndAll();  
+                    } else {
+                        // continue with any active dialogs
+                        await dc.Continue();
+                    }
                     if(!context.Responded)
                     {
-                        
                         // top level dispatch
                         switch (utterance)
                         {

@@ -17,7 +17,7 @@ namespace ContosoCafeBot
         {
             string utterance = context.Activity.Text;
             // JObject cardData = (JObject)context.Activity.Value;
-            // if (cardData != null && cardData.Property("intent") != null) utterance = cardData["utterance"].ToString();
+            // if (cardData != null && cardData.Property("utterance") != null) utterance = cardData["utterance"].ToString();
             switch (context.Activity.Type)
             {
                 case ActivityTypes.ConversationUpdate:
@@ -30,20 +30,25 @@ namespace ContosoCafeBot
                     }
                     break;
                 case ActivityTypes.Message:
-                    switch(utterance)
-                    {
-                        case "hi":
-                            await context.SendActivity("Hello, I'm the contoso cafe bot. How can I help you?");
-                            break;
-                        case "book table":
-                            await context.SendActivity("I'm still learning to book a table!");
-                            break;
-                        case "who are you?":
-                            await context.SendActivity("I'm the cafe bot!");
-                            break;
-                        default:
-                            await getQnAResult(context);
-                            break;
+                    if(utterance == "start over") {
+                            //restart the conversation
+                            await context.SendActivity("Sure.. Let's start over");        
+                    } else {
+                        switch(utterance)
+                        {
+                            // case "hi":
+                            //     await context.SendActivity("Hello, I'm the contoso cafe bot. How can I help you?");
+                            //     break;
+                            // case "book table":
+                            //     await context.SendActivity("I'm still learning to book a table!");
+                            //     break;
+                            // case "who are you?":
+                            //     await context.SendActivity("I'm the cafe bot!");
+                            //     break;
+                            default:
+                                await getQnAResult(context);
+                                break;
+                        }
                     }
                     break;
             }
