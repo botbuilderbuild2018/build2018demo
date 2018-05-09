@@ -40,7 +40,7 @@ namespace ContosoCafeBot
             {
                 case ActivityTypes.ConversationUpdate:
                     var newUserName = context.Activity.MembersAdded[0].Name;
-                    if (!string.IsNullOrWhiteSpace(newUserName) && newUserName != "Bot" && string.IsNullOrEmpty(userState.name))
+                    if (!string.IsNullOrWhiteSpace(newUserName) && newUserName != "Bot")
                     {
                         await context.SendActivity($"Hello {newUserName}! I'm the Cafe bot!");
                         // remember the user's name
