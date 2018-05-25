@@ -79,7 +79,7 @@ namespace ContosoCafeBot.Dialogs
                         // prompt if we do not already have date and time
                         if(promptForDateTime) {
                             await dc.Prompt("timexPrompt", "When would you like to arrive? (We open at 4PM.)",
-                                            new PromptOptions { RetryPromptString = "Please pick a date in the future and a time in the evening." });
+                                            new PromptOptions { RetryPromptString = "We only accept reservations for the next 2 weeks and in the evenings between 4PM - 8PM" });
                         } else {
                             await next();
                         }                       

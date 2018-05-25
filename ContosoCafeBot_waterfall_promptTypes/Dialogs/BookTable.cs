@@ -48,7 +48,7 @@ namespace ContosoCafeBot.Dialogs
                         var choiceResult = (FoundChoice)args["Value"];
                         dc.ActiveDialog.State["bookingLocation"] = choiceResult.Value;
                         await dc.Prompt("timexPrompt", $"Ok. I have {dc.ActiveDialog.State["bookingLocation"]} When would you like to arrive? (We open at 4PM.)",
-                            new PromptOptions { RetryPromptString = "Sorry, we only accept reservations for the next two weeks, 4PM-8PM" });
+                            new PromptOptions { RetryPromptString = "We only accept reservations for the next 2 weeks and in the evenings between 4PM - 8PM" });
                     },
                     async (dc, args, next) =>
                     {
