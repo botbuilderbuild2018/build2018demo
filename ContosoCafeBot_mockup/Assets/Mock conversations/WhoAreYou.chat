@@ -1,9 +1,17 @@
 ﻿user=vishwac
 bot=cafebot
 
-user: Who are you?
-bot: Hi, I'm the Contoso Cafe bot. What's your name?
-user: I'm vishwac
-bot: [Typing]
-[Delay=3000]
-Hello Vishwac. Nice to meet you!
+user: Who are you? [#WhoAreYou]
+bot: 
+    - (?{userName}) Hello {userName}, how can I help you today?
+    - (else) Hi, I'm the Contoso Cafe bot. What's your name?
+
+user: 
+    - I'm {userName=vishwac}
+    - Why do you need my name? [#Why?]
+    - I will not give you my name. [#NoName]
+
+bot: 
+    - (?{userName)} Hello {userName}. Nice to meet you!
+    - (?[#Why]) I need your name to be able to address you correctly! 
+    - (else) Hello human. Nice to meet you!
