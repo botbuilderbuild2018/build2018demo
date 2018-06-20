@@ -1,0 +1,42 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<link rel="stylesheet" href="~/css/site.css" type="text/css" />
+<script src="~/js/azure-storage.blob.js"></script>
+<script src="~/js/site.js"></script>
+<div class="janeContainer">
+    <img src="~/images/bg.png" class="bgHost" />
+</div>
+<div class="janeEditor">
+    <textarea id="jd1" class="janeta" rows="40" cols="178" placeholder="Enter script here..."></textarea>
+</div>
+<div class="savebutton" onclick="saveAction()"></div>
+<div id="saveStatusId" class="saveProgress"></div>
+<button onclick="addUserSays()" value="User says">User says</button>
+<button onclick="addBotSays()" value="Bot says">Bot says</button>
+<div id="chatControl" class="chatControl">
+
+</div>
+<!--
+<script type="text/javascript">
+    function saveAction() {
+        alert('saving...');
+        /*document.getElementById('jd1').text = 'saving...';
+        var blobUri = 'https://' + 'projectjane' + '.blob.core.windows.net';
+        var blobService = AzureStorage.Blob.createBlobServiceWithSas(blobUri, '?sv=2017-11-09&ss=bfqt&srt=sco&sp=rwdlacup&se=2018-07-01T07:49:46Z&st=2018-06-19T23:49:46Z&spr=https,http&sig=UM3IF3tVVvw1CxUk%2FMr5AzB4ftvJyBqA3qQQaPxQy80%3D');
+
+
+        var uploadSummary = blobService.createBlockBlobFromText('junestudy', 'test', 'hello world', , function (error, result, response) {
+            finishedOrError = true;
+            if (error) {
+                alert('upload failed: ' + error);
+            } else {
+                alert('Saved successfully!');
+            }
+        });*/
+    }
+</script>
+    -->

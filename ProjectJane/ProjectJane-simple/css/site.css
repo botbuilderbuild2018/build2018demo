@@ -1,0 +1,91 @@
+/* Chat containers */
+.containerChat {
+    border: 2px solid #dedede;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    margin: 10px 0;
+    width: 80%;
+}
+
+.chatBubble {
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 15px;
+}
+
+
+
+.darkerChat {
+    border-color: #ccc;
+    background-color: #ddd;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.containerChat::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.time-rightChat {
+    float: left;
+    color: #999;
+}
+
+.time-leftChat {
+    float: right;
+    color: #999;
+}
+body {
+    padding-bottom: 20px;
+}
+.chatControl {
+    position: absolute;
+    top: 195px;
+    left: 1465px;
+    height: 820px;
+    width: 397px;
+    overflow: auto;
+}
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+}
+.saveProgress {
+    position: absolute;
+    top: 154px;
+    left: 450px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 13px;
+    color: black;
+}
+.savebutton {
+    position: absolute;
+    top: 142px;
+    left: 92px;
+    width: 111px;
+    height: 34px;
+    cursor: pointer;
+}
+
+.janeEditor {
+    position: absolute;
+    top: 264px;
+    left: 139px;
+}
+.janeta {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: medium;
+}
+.janeContainer {
+    padding:15px;
+}

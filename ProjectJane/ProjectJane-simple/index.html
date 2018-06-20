@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+<TITLE>Project Jane</TITLE>
+</HEAD>
+<BODY>
+    <link rel="stylesheet" href="css/site.css" type="text/css" />
+    <script src="js/azure-storage.blob.js"></script>
+    <script src="js/site.js"></script>
+    <div class="janeContainer">
+        <img src="images/bg.png" class="bgHost" />
+    </div>
+    <div class="janeEditor">
+        <textarea id="jd1" class="janeta" rows="48" cols="178" placeholder="Enter script here..." onclick="registerHandler()"></textarea>
+    </div>
+    <div class="savebutton" onclick="saveAction()"></div>
+    <div id="saveStatusId" class="saveProgress"></div>
+    <!--<button onclick="addUserSays()" value="User says">User says</button>
+    <button onclick="addBotSays()" value="Bot says">Bot says</button>
+    <button onclick="genChat()" value="Bot says">Bot says</button>
+        -->
+    <div id="chatControl" class="chatControl">
+
+    </div>
+</BODY>
+
+</HTML>
