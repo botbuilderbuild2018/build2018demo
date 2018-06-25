@@ -1,4 +1,6 @@
-﻿function saveAction() {
+﻿var curPagePosition = 1;
+
+function saveAction() {
     document.getElementById('saveStatusId').innerText = 'Saving...';
     var content = document.getElementById('jd1').value;
     var fileName = new Date().toISOString();
@@ -37,24 +39,24 @@ function addUserSays() {
 
 }
 
-function addUserSaysHelper(text) {
+function addUserSaysHelper(text, userName) {
     var userSaysDiv = document.createElement("div");
     userSaysDiv.className = "containerChat";
     userSaysDiv.innerHTML = `
         <p class="chatBubble">` + text + `</p>
-        <span class="time-rightChat">User</span>
+        <span class="time-rightChat">` + userName + `</span>
     `;
     var chatControl = document.getElementById('chatControl');
     chatControl.appendChild(userSaysDiv);
 
 }
 
-function addBotSaysHelper(text) {
+function addBotSaysHelper(text, botName) {
     var botSaysDiv = document.createElement("div");
     botSaysDiv.className = "containerChat darkerChat";
     botSaysDiv.innerHTML = `
         <p class="chatBubble">` + text + `</p>
-        <span class="time-leftChat">Bot</span>
+        <span class="time-leftChat">` + botName + `</span>
     `;
     var chatControl = document.getElementById('chatControl');
     chatControl.appendChild(botSaysDiv);
@@ -80,15 +82,25 @@ function genChat() {
 
     // get text from textarea
     var text = document.getElementById('jd1').value;
-    var tokenized = text.split(/(user|bot|User|Bot):/);
+    var tokenized = text.split(/(user|bot|User|Bot)\s*(:|=)/);
+    var userName = 'User';
+    var botName = 'Bot';
     for (p = 0; p < tokenized.length; p++) {
         if (tokenized[p]) {
             if (tokenized[p].toLowerCase() === 'user') {
-                addUserSaysHelper(tokenized[p + 1]);
-                p++;
+                if(tokenized[p+1] === '=') {
+                    userName = tokenized[p+2];
+                } else {
+                    addUserSaysHelper(tokenized[p + 2].trim(), userName.trim());
+                }
+                p+=2;
             } else {
-                addBotSaysHelper(tokenized[p + 1]);
-                p++;
+                if(tokenized[p+1] === '=') {
+                    botName = tokenized[p+2];
+                } else {
+                    addBotSaysHelper(tokenized[p + 2].trim(), botName.trim());
+                }
+                p+=2;
             }
         }
     }
@@ -105,4 +117,57 @@ function registerHandler() {
             genChat();
         }
     });
+}
+
+function moveLeft() {
+    --curPagePosition; 
+    if(curPagePosition < 1) curPagePosition = 1;
+    renderPage();
+}
+
+function moveRight() {
+    ++curPagePosition;
+    if(curPagePosition > 41) curPagePosition = 41;
+    renderPage();
+}
+function clearChat() {
+    document.getElementById('jd1').value = '';
+}
+function renderPage() {
+    let pageSrc;
+    if(curPagePosition < 10) {
+        if(curPagePosition === 8) {
+            document.getElementById('jd1').style.visibility = "visible";
+            document.getElementById('saveButton').style.visibility = "visible";
+            document.getElementById('saveStatusId').style.visibility = "visible";
+            document.getElementById('chatControl').style.visibility = "visible";
+            document.getElementById('refreshButton').style.visibility = "visible";
+            document.getElementById('resetButton').style.visibility = "visible";
+            pageSrc = "images/src/ProjectJane_0620_Page_0" + curPagePosition + ".png";
+            document.getElementById('bgImg').src = pageSrc;
+        } else {
+            document.getElementById('jd1').style.visibility = "hidden";
+            document.getElementById('saveButton').style.visibility = "hidden";
+            document.getElementById('saveStatusId').style.visibility = "hidden";
+            document.getElementById('chatControl').style.visibility = "hidden";
+            document.getElementById('refreshButton').style.visibility = "hidden";
+            document.getElementById('resetButton').style.visibility = "hidden";
+            pageSrc = "images/src/ProjectJane_0620_Page_0" + curPagePosition + ".png";
+            document.getElementById('bgImg').src = pageSrc;
+        }        
+    } else {
+        if(curPagePosition === 10) {
+            document.getElementById("page10").style.visibility = "visible";
+            document.getElementById("page10scroll").style.visibility = "visible";
+        } else {
+            document.getElementById("page10").style.visibility = "hidden";
+            document.getElementById("page10scroll").style.visibility = "hidden";
+        }
+        pageSrc = "images/src/ProjectJane_0620_Page_" + curPagePosition + ".png";
+        document.getElementById('bgImg').src = pageSrc;
+    }
+}
+
+function goHome() {
+    window.location.assign('6222018_1.html');
 }

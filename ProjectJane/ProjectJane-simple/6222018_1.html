@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+<TITLE>Project Jane</TITLE>
+</HEAD>
+<BODY>
+    <link rel="stylesheet" href="css/site.css" type="text/css" />
+    <script src="js/azure-storage.blob.js"></script>
+    <script src="js/site.js"></script>
+    <div class="janeContainer">
+        <img id='bgImg' src="images/src/ProjectJane_0620_Page_01.png" class="bgHost" />
+    </div>
+    <div class="janeEditor">
+        <textarea id="jd1" class="janeta" rows="48" cols="178" placeholder="Enter script here..." onclick="registerHandler()"></textarea>
+    </div>
+    <div id="saveButton" class="savebutton" onclick="saveAction()"></div>
+    <div id="saveStatusId" class="saveProgress"></div>
+    <!--<button onclick="addUserSays()" value="User says">User says</button>
+    <button onclick="addBotSays()" value="Bot says">Bot says</button>
+    <button onclick="genChat()" value="Bot says">Bot says</button>
+        -->
+    <div id="chatControl" class="chatControl">
+
+    </div>
+
+    <div id="refreshButton" class="refreshButton" onclick="genChat()">Refresh Chat</div>
+    <div id="resetButton" class="resetButton" onclick="clearChat()">Reset | </div>
+
+    <div id="leftChevron" class="leftChevron" onclick="moveLeft()">&lt;</div>
+    <div id="rightChevron" class="rightChevron" onclick="moveRight()">&gt;</div>
+
+    <div id="page10" class="page10">
+        <img src="images/src/page10_scrollable-script.png">
+    </div>
+    <div id="page10scroll" class="page10scroll">
+            <img src="images/src/page10_scrollable-chat.png">
+        </div>
+
+    
+</BODY>
+
+</HTML>
